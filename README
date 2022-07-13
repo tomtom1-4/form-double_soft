@@ -1,0 +1,84 @@
+Evaluation of the LP double soft current 
+
+1.) Generation of the diagrams. 
+
+Go into the diagrams directory. 
+
+        make 
+        ./diags 
+        
+ 2.) Reduction to master integrals 
+
+Go into the IBPreduction directory. Link kira to Fermat with 
+
+        export FERMATPATH="/home/tom/Uni/Semester_X/master/programs/fermat/ferl6/ferl6/fer64"
+        
+Then start kira with 
+
+        /home/tom/Uni/Semester_X/master/programs/kira/kira-2.2 jobs.yaml
+        
+        /home/tom/Uni/Semester_X/master/programs/kira/kira-2.2 export.yaml
+       
+ 3.) Generation of Form Code 
+ 
+ Form Code is generated in FormCode.nb. After execution it is neccessary to replace the first "elseif" statements in the
+ Integrand`i'liners.prc by "if" statements. The program only works fro a limited number of "Eik" terms. For more than 3 it 
+ is neccessary to adjust the naming of the variables in
+ 
+         FORMString[
+          shiftedIntegrandLeft /. {Eik[k_, "r1?"]^2 -> 
+             Eik[k, "r1?"] Eik[k, "r4?"], 
+            Eik[k_, "r2?"]^2 -> Eik[k, "r2?"] Eik[k, "r4?"], 
+            Eik[k_, "r1?"]^3 -> Eik[k, "r1?"] Eik[k, "r4?"] Eik[k, "r5?"]}];
+        shiftedIntegrandRight = 
+          FORMString[
+           shiftedIntegrandRight /. {Eik[k_, "r1?"]^2 -> 
+              Eik[k, "r1?"] Eik[k, "r4?"], 
+             Eik[k_, "r2?"]^2 -> Eik[k, "r2?"] Eik[k, "r4?"], 
+             Eik[k_, "r1?"]^3 -> Eik[k, "r1?"] Eik[k, "r4?"] Eik[k, "r5?"]}];
+
+and add new identities for the new powers.
+        
+ 4.) Transversality checks are implemented in "transversality_check.frm". One must replace E3 and/or E4 in Feynman rules 
+ first. Then run "double_soft1l_diags.frm" and "transversality_check.frm".
+ 
+ 5.) Evaluate each diagram individually with 
+    
+        form double_soft1l_diags.frm 
+ 
+ 6.) Compute the sum of all the diagrams and apply symmetry relations with 
+ 
+        form double_soft1l_sum.frm 
+        
+7.) Insert all neccessary Integrals with 
+
+        form double_soft1l_int.frm 
+    
+    The formfile generates results/coli1.txt, results/coli2.txt and results/colij.txt corresponding to the three main color structures 
+        1. Ti(c) f(c3, c4, c) (coli1.txt)
+        2. Ti(c) Ti(d) f(c3, c, e) f(c4, d, e) (coli2.txt)
+        3. Ti(c) Tj(d) f(c3, c, e) f(c4, d, e) (colij.txt) 
+        
+8.) Create a file readeble for C/C++ with the form parser 
+
+        python form_interpreter.py 
+    
+    This generates a C++ file in /home/tom/Uni/Semester_X/master/programs/recola_otter/recola2-2.2.3/sims/double_soft/current.cpp 
+    
+9.) Change directory to the C++ project e.g. /home/tom/Uni/Semester_X/master/programs/recola_otter/recola2-2.2.3/sims/double_soft
+    and compile the current.cpp file with 
+    
+        gcc -c current.cpp -o current.o -l params.hpp -l array_manipulation.cpp -O3
+   
+   The make file will link the .o file to the project so it is not compiled multiple times and needs to be recompiled whenever 
+   changes are made. 
+   
+10.) Compile the main file with 
+
+        make 
+    
+    and run with 
+    
+        ./soft.exe 
+        
+        
