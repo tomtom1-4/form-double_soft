@@ -1,0 +1,6436 @@
+*--#[ d1 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, q -> qbar, p3+p2
+*	6: 4 -> 7, -p4
+*	7: 5 -> 7, g -> g, p4-k
+*	8: 6 -> 7, g -> g, k
+*	9: 5 -> 6, q -> qbar, p3+p2+k
+
+#define nl "0"
+
+g d1 =
+
+	+6*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli9,cOli7))
+	*EikV(p3+p2+k, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*VVV(-p4, v7l6, p4-k, v7l7, k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(p3+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p2, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l7, v7l7, p4-k, 0)
+	*DV(v6l8, v7l8, k, 0)
+	*DS(p3+p2+k, 0)
+
+;
+
+*--#] d1 :
+
+*--#[ d2 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, q -> qbar, p3+p2
+*	6: 4 -> 7, -p4
+*	7: 5 -> 7, q -> qbar, p4-k
+*	8: 6 -> 7, qbar -> q, k
+*	9: 5 -> 6, g -> g, p3+p2+k
+
+#define nl "0"
+
+g d2 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l9)
+	*(cOlT(cOli2,cOli7,cOli9))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(p4-k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*EikV(p3+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p2, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4-k, 0)
+	*DS(k, 0)
+	*DV(v5l9, v6l9, p3+p2+k, 0)
+
+;
+
+*--#] d2 :
+
+*--#[ d3 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, q -> qbar, p4+p2
+*	6: 4 -> 7, -p3
+*	7: 5 -> 7, g -> g, p3-k
+*	8: 6 -> 7, g -> g, k
+*	9: 5 -> 6, q -> qbar, p4+p2+k
+
+#define nl "0"
+
+g d3 =
+
+	+6*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli9,cOli7))
+	*EikV(p4+p2+k, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*VVV(-p3, v7l6, p3-k, v7l7, k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(p4+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p2, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v5l7, v7l7, p3-k, 0)
+	*DV(v6l8, v7l8, k, 0)
+	*DS(p4+p2+k, 0)
+
+;
+
+*--#] d3 :
+
+*--#[ d4 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, q -> qbar, p4+p2
+*	6: 4 -> 7, -p3
+*	7: 5 -> 7, q -> qbar, p3-k
+*	8: 6 -> 7, qbar -> q, k
+*	9: 5 -> 6, g -> g, p4+p2+k
+
+#define nl "0"
+
+g d4 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l9)
+	*(cOlT(cOli2,cOli7,cOli9))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(p3-k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*EikV(p4+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p2, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*DV(v5l9, v6l9, p4+p2+k, 0)
+
+;
+
+*--#] d4 :
+
+*--#[ d5 :
+
+*	internal fields: quark g g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, g -> g, p4+p3
+*	6: 4 -> 7, -p2
+*	7: 5 -> 7, g -> g, p2-k
+*	8: 6 -> 7, q -> qbar, k
+*	9: 5 -> 6, q -> qbar, p4+p3+k
+
+#define nl "0"
+
+g d5 =
+
+	+6*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli9,cOli7))
+	*EikV(p4+p3+k, v6l5)
+	*(cOlT(cOli9,cOli8,cOli5))
+	*EikV(k, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*VVV(-p3, v8l3, -p4, v8l4, p4+p3, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DV(v6l5, v8l5, p4+p3, 0)
+	*V(p2,cOli6)
+	*DV(v5l7, v7l7, p2-k, 0)
+	*DS(k, 0)
+	*DS(p4+p3+k, 0)
+
+;
+
+*--#] d5 :
+
+*--#[ d6 :
+
+*	internal fields: quark g quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, g -> g, p4+p3
+*	6: 4 -> 7, -p2
+*	7: 5 -> 7, q -> qbar, p2-k
+*	8: 6 -> 7, g -> g, k
+*	9: 5 -> 6, g -> g, p4+p3+k
+
+#define nl "0"
+
+g d6 =
+
+	+36*(-1)
+	*EikV(p1234-p1, v5l9)
+	*(cOlT(cOli2,cOli7,cOli9))
+	*VVV(p4+p3+k, v6l9, -p4-p3, v6l5, -k, v6l8)
+	*(-1/6*i_*cOlf(cOli9,cOli5,cOli8))
+	*EikV(p2-k, v7l8)
+	*(cOlT(cOli7,cOli6,cOli8))
+	*VVV(-p3, v8l3, -p4, v8l4, p4+p3, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DV(v6l5, v8l5, p4+p3, 0)
+	*V(p2,cOli6)
+	*DS(p2-k, 0)
+	*DV(v6l8, v7l8, k, 0)
+	*DV(v5l9, v6l9, p4+p3+k, 0)
+
+;
+
+*--#] d6 :
+
+*--#[ d7 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, qbar -> q, p3+p1
+*	6: 4 -> 7, -p4
+*	7: 5 -> 7, g -> g, p4-k
+*	8: 6 -> 7, g -> g, k
+*	9: 5 -> 6, qbar -> q, p3+p1+k
+
+#define nl "0"
+
+g d7 =
+
+	+6*(-1)
+	*EikV(-p3-p1-k, v5l7)
+	*(cOlT(cOli9,cOli2,cOli7))
+	*EikV(-p3-p1, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*VVV(-p4, v7l6, p4-k, v7l7, k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p1, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l7, v7l7, p4-k, 0)
+	*DV(v6l8, v7l8, k, 0)
+	*DS(p3+p1+k, 0)
+
+;
+
+*--#] d7 :
+
+*--#[ d8 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, qbar -> q, p3+p1
+*	6: 4 -> 7, -p4
+*	7: 5 -> 7, qbar -> q, p4-k
+*	8: 6 -> 7, q -> qbar, k
+*	9: 5 -> 6, g -> g, p3+p1+k
+
+#define nl "0"
+
+g d8 =
+
+	+1*(-1)
+	*EikV(-p4+k, v5l9)
+	*(cOlT(cOli7,cOli2,cOli9))
+	*EikV(-p3-p1, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p1, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4-k, 0)
+	*DS(k, 0)
+	*DV(v5l9, v6l9, p3+p1+k, 0)
+
+;
+
+*--#] d8 :
+
+*--#[ d9 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, qbar -> q, p4+p1
+*	6: 4 -> 7, -p3
+*	7: 5 -> 7, g -> g, p3-k
+*	8: 6 -> 7, g -> g, k
+*	9: 5 -> 6, qbar -> q, p4+p1+k
+
+#define nl "0"
+
+g d9 =
+
+	+6*(-1)
+	*EikV(-p4-p1-k, v5l7)
+	*(cOlT(cOli9,cOli2,cOli7))
+	*EikV(-p4-p1, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*VVV(-p3, v7l6, p3-k, v7l7, k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p1, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v5l7, v7l7, p3-k, 0)
+	*DV(v6l8, v7l8, k, 0)
+	*DS(p4+p1+k, 0)
+
+;
+
+*--#] d9 :
+
+*--#[ d10 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, qbar -> q, p4+p1
+*	6: 4 -> 7, -p3
+*	7: 5 -> 7, qbar -> q, p3-k
+*	8: 6 -> 7, q -> qbar, k
+*	9: 5 -> 6, g -> g, p4+p1+k
+
+#define nl "0"
+
+g d10 =
+
+	+1*(-1)
+	*EikV(-p3+k, v5l9)
+	*(cOlT(cOli7,cOli2,cOli9))
+	*EikV(-p4-p1, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p1, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*DV(v5l9, v6l9, p4+p1+k, 0)
+
+;
+
+*--#] d10 :
+
+*--#[ d11 :
+
+*	internal fields: quark g g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, g -> g, p4+p3
+*	6: 4 -> 7, -p1
+*	7: 5 -> 7, g -> g, p1-k
+*	8: 6 -> 7, qbar -> q, k
+*	9: 5 -> 6, qbar -> q, p4+p3+k
+
+#define nl "0"
+
+g d11 =
+
+	+6*(-1)
+	*EikV(-p4-p3-k, v5l7)
+	*(cOlT(cOli9,cOli2,cOli7))
+	*EikV(-k, v6l5)
+	*(cOlT(cOli8,cOli9,cOli5))
+	*EikV(-p1, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*VVV(-p3, v8l3, -p4, v8l4, p4+p3, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DV(v6l5, v8l5, p4+p3, 0)
+	*V(p1,cOli6)
+	*DV(v5l7, v7l7, p1-k, 0)
+	*DS(k, 0)
+	*DS(p4+p3+k, 0)
+
+;
+
+*--#] d11 :
+
+*--#[ d12 :
+
+*	internal fields: quark g quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, g -> g, p4+p3
+*	6: 4 -> 7, -p1
+*	7: 5 -> 7, qbar -> q, p1-k
+*	8: 6 -> 7, g -> g, k
+*	9: 5 -> 6, g -> g, p4+p3+k
+
+#define nl "0"
+
+g d12 =
+
+	+36*(-1)
+	*EikV(-p1+k, v5l9)
+	*(cOlT(cOli7,cOli2,cOli9))
+	*VVV(p4+p3+k, v6l9, -p4-p3, v6l5, -k, v6l8)
+	*(-1/6*i_*cOlf(cOli9,cOli5,cOli8))
+	*EikV(-p1, v7l8)
+	*(cOlT(cOli6,cOli7,cOli8))
+	*VVV(-p3, v8l3, -p4, v8l4, p4+p3, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DV(v6l5, v8l5, p4+p3, 0)
+	*V(p1,cOli6)
+	*DS(p1-k, 0)
+	*DV(v6l8, v7l8, k, 0)
+	*DV(v5l9, v6l9, p4+p3+k, 0)
+
+;
+
+*--#] d12 :
+
+*--#[ d13 :
+
+*	internal fields: g g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, -p3
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, g -> g, p4+p3
+*	6: 4 -> 7, p1234
+*	7: 5 -> 7, q -> qbar, -p1234-k
+*	8: 6 -> 7, qbar -> q, k
+*	9: 5 -> 6, qbar -> q, p4+p3+k
+
+#define nl "0"
+
+g d13 =
+
+	+6*(-1)
+	*EikV(-p4-p3-k, v5l2)
+	*(cOlT(cOli9,cOli7,cOli2))
+	*EikV(-k, v6l5)
+	*(cOlT(cOli8,cOli9,cOli5))
+	*(M(cOli7,cOli8))
+	*VVV(-p3, v8l3, -p4, v8l4, p4+p3, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DV(v6l5, v8l5, p4+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*DS(p4+p3+k, 0)
+
+;
+
+*--#] d13 :
+
+*--#[ d14 :
+
+*	internal fields: g g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, -p3
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, g -> g, p4+p3
+*	6: 4 -> 7, p1234
+*	7: 5 -> 7, qbar -> q, -p1234-k
+*	8: 6 -> 7, q -> qbar, k
+*	9: 5 -> 6, q -> qbar, p4+p3+k
+
+#define nl "0"
+
+g d14 =
+
+	+6*(-1)
+	*EikV(p1234+k, v5l2)
+	*(cOlT(cOli7,cOli9,cOli2))
+	*EikV(p4+p3+k, v6l5)
+	*(cOlT(cOli9,cOli8,cOli5))
+	*(M(cOli8,cOli7))
+	*VVV(-p3, v8l3, -p4, v8l4, p4+p3, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DV(v6l5, v8l5, p4+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*DS(p4+p3+k, 0)
+
+;
+
+*--#] d14 :
+
+*--#[ d15 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, q -> qbar, p4+p2
+*	6: 4 -> 7, p1234
+*	7: 5 -> 7, q -> qbar, -p1234-k
+*	8: 6 -> 7, qbar -> q, k
+*	9: 5 -> 6, g -> g, p4+p2+k
+
+#define nl "0"
+
+g d15 =
+
+	+1*(-1)
+	*EikV(-p1-p3, v5l9)
+	*(cOlT(cOli2,cOli7,cOli9))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*(M(cOli7,cOli8))
+	*EikV(p4+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*DV(v5l9, v6l9, p4+p2+k, 0)
+
+;
+
+*--#] d15 :
+
+*--#[ d16 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, q -> qbar, p3+p2
+*	6: 4 -> 7, p1234
+*	7: 5 -> 7, q -> qbar, -p1234-k
+*	8: 6 -> 7, qbar -> q, k
+*	9: 5 -> 6, g -> g, p3+p2+k
+
+#define nl "0"
+
+g d16 =
+
+	+1*(-1)
+	*EikV(-p1-p4, v5l9)
+	*(cOlT(cOli2,cOli7,cOli9))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*(M(cOli7,cOli8))
+	*EikV(p3+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*DV(v5l9, v6l9, p3+p2+k, 0)
+
+;
+
+*--#] d16 :
+
+*--#[ d17 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, q -> qbar, p3+p2
+*	6: 5 -> 7, q -> qbar, p1234-p1-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, qbar -> q, -p1234+p1
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d17 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli6,cOli7))
+	*EikV(p1234-p1, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(p1234-p1-k, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*EikV(p3+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p2, 0)
+	*DS(p1234-p1-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d17 :
+
+*--#[ d18 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, q -> qbar, p4+p2
+*	6: 5 -> 7, q -> qbar, p1234-p1-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, qbar -> q, -p1234+p1
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d18 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli6,cOli7))
+	*EikV(p1234-p1, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(p1234-p1-k, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*EikV(p4+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p2, 0)
+	*DS(p1234-p1-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d18 :
+
+*--#[ d19 :
+
+*	internal fields: quark g quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, g -> g, p4+p3
+*	6: 5 -> 7, q -> qbar, p1234-p1-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, qbar -> q, -p1234+p1
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d19 =
+
+	+6*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli6,cOli7))
+	*EikV(p1234-p1, v6l5)
+	*(cOlT(cOli8,cOli9,cOli5))
+	*EikV(p1234-p1-k, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*VVV(-p3, v8l3, -p4, v8l4, p4+p3, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DV(v6l5, v8l5, p4+p3, 0)
+	*DS(p1234-p1-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d19 :
+
+*--#[ d20 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, qbar -> q, p3+p1
+*	6: 5 -> 7, qbar -> q, p1234-p2-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, q -> qbar, -p1234+p2
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d20 =
+
+	+1*(-1)
+	*EikV(-p1234+p2+k, v5l7)
+	*(cOlT(cOli6,cOli2,cOli7))
+	*EikV(-p3-p1, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(-p1234+p2, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p1, 0)
+	*DS(p1234-p2-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d20 :
+
+*--#[ d21 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, qbar -> q, p4+p1
+*	6: 5 -> 7, qbar -> q, p1234-p2-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, q -> qbar, -p1234+p2
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d21 =
+
+	+1*(-1)
+	*EikV(-p1234+p2+k, v5l7)
+	*(cOlT(cOli6,cOli2,cOli7))
+	*EikV(-p4-p1, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(-p1234+p2, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p1, 0)
+	*DS(p1234-p2-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d21 :
+
+*--#[ d22 :
+
+*	internal fields: quark g quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, g -> g, p4+p3
+*	6: 5 -> 7, qbar -> q, p1234-p2-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, q -> qbar, -p1234+p2
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d22 =
+
+	+6*(-1)
+	*EikV(-p1234+p2+k, v5l7)
+	*(cOlT(cOli6,cOli2,cOli7))
+	*EikV(-p1, v6l5)
+	*(cOlT(cOli9,cOli8,cOli5))
+	*EikV(-p1234+p2, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*VVV(-p3, v8l3, -p4, v8l4, p4+p3, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DV(v6l5, v8l5, p4+p3, 0)
+	*DS(p1234-p2-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d22 :
+
+*--#[ d23 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p2
+*	5: 6 -> 8, q -> qbar, p2-p1234
+*	6: 5 -> 7, q -> qbar, -p1-p3-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, qbar -> q, p1+p3
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d23 =
+
+	+1*(-1)
+	*EikV(-p1-p3, v5l7)
+	*(cOlT(cOli2,cOli6,cOli7))
+	*EikV(-p1-p3, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(-p1-p3-k, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*(M(cOli5,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*1
+	*V(p2,cOli4)
+	*DS(p2-p1234, 0)
+	*DS(-p1-p3-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(p1+p3, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d23 :
+
+*--#[ d24 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p2
+*	5: 6 -> 8, q -> qbar, p2-p1234
+*	6: 5 -> 7, q -> qbar, -p1-p4-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, qbar -> q, p1+p4
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d24 =
+
+	+1*(-1)
+	*EikV(-p1-p4, v5l7)
+	*(cOlT(cOli2,cOli6,cOli7))
+	*EikV(-p1-p4, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(-p1-p4-k, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*(M(cOli5,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*1
+	*V(p2,cOli4)
+	*DS(p2-p1234, 0)
+	*DS(-p1-p4-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(p1+p4, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d24 :
+
+*--#[ d25 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p1
+*	5: 6 -> 8, qbar -> q, p1-p1234
+*	6: 5 -> 7, qbar -> q, -p2-p3-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, q -> qbar, p2+p3
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d25 =
+
+	+1*(-1)
+	*EikV(p2+p3+k, v5l7)
+	*(cOlT(cOli6,cOli2,cOli7))
+	*EikV(-p1+p1234, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(p2+p3, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*(M(cOli4,cOli5))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*1
+	*V(p1,cOli4)
+	*DS(p1-p1234, 0)
+	*DS(-p2-p3-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(p2+p3, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d25 :
+
+*--#[ d26 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p1
+*	5: 6 -> 8, qbar -> q, p1-p1234
+*	6: 5 -> 7, qbar -> q, -p2-p4-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, q -> qbar, p2+p4
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d26 =
+
+	+1*(-1)
+	*EikV(p2+p4+k, v5l7)
+	*(cOlT(cOli6,cOli2,cOli7))
+	*EikV(-p1+p1234, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(p2+p4, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*(M(cOli4,cOli5))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*1
+	*V(p1,cOli4)
+	*DS(p1-p1234, 0)
+	*DS(-p2-p4-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(p2+p4, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d26 :
+
+*--#[ d27 :
+
+*	internal fields: g quark g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p1
+*	5: 6 -> 8, qbar -> q, p1-p1234
+*	6: 5 -> 7, g -> g, -p3-p4-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, g -> g, p3+p4
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d27 =
+
+	+108*(-1)
+	*VVV(-p3-p4, v5l2, p3+p4+k, v5l6, -k, v5l7)
+	*(-1/6*i_*cOlf(cOli2,cOli6,cOli7))
+	*EikV(-p1+p1234, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*VVV(-p3-p4-k, v7l6, k, v7l7, p3+p4, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*(M(cOli4,cOli5))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*V(p1,cOli4)
+	*DS(p1-p1234, 0)
+	*DV(v5l6, v7l6, -p3-p4-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DV(v6l8, v7l8, p3+p4, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d27 :
+
+*--#[ d28 :
+
+*	internal fields: g quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p1
+*	5: 6 -> 8, qbar -> q, p1-p1234
+*	6: 5 -> 7, qbar -> q, -p3-p4-k
+*	7: 5 -> 7, q -> qbar, k
+*	8: 6 -> 7, g -> g, p3+p4
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d28 =
+
+	+6*(-1)
+	*EikV(p3+p4+k, v5l2)
+	*(cOlT(cOli6,cOli7,cOli2))
+	*EikV(-p1+p1234, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*EikV(k, v7l8)
+	*(cOlT(cOli7,cOli6,cOli8))
+	*(M(cOli4,cOli5))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*V(p1,cOli4)
+	*DS(p1-p1234, 0)
+	*DS(-p3-p4-k, 0)
+	*DS(k, 0)
+	*DV(v6l8, v7l8, p3+p4, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d28 :
+
+*--#[ d29 :
+
+*	internal fields: g quark c c g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p1
+*	5: 6 -> 8, qbar -> q, p1-p1234
+*	6: 5 -> 7, cbar -> c, -p3-p4-k
+*	7: 5 -> 7, c -> cbar, k
+*	8: 6 -> 7, g -> g, p3+p4
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d29 =
+
+	-6*(-1)
+	*(p3(v5l2)+p4(v5l2)+k(v5l2))*(i_*cOlf(cOli6,cOli7,cOli2))
+	*EikV(-p1+p1234, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*(k(v7l8))*(i_*cOlf(cOli7,cOli6,cOli8))
+	*(M(cOli4,cOli5))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*V(p1,cOli4)
+	*DS(p1-p1234, 0)
+	*DG(-p3-p4-k, 0)
+	*DG(k, 0)
+	*DV(v6l8, v7l8, p3+p4, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d29 :
+
+*--#[ d30 :
+
+*	internal fields: g quark f f g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p1
+*	5: 6 -> 8, qbar -> q, p1-p1234
+*	6: 5 -> 7, fbar -> f, -p3-p4-k
+*	7: 5 -> 7, f -> fbar, k
+*	8: 6 -> 7, g -> g, p3+p4
+*	9: 4 -> 6, -p2
+
+#define nl "1"
+
+g d30 =
+
+	-6*(-1)
+	*G(0, v5l2)*(cOlT(cOli6,cOli7,cOli2))
+	*SF(0, -k, 0)
+	*G(0, v7l8)*(cOlT(cOli7,cOli6,cOli8))
+	*SF(0, -p3-p4-k, 0)
+	*EikV(-p1+p1234, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*(M(cOli4,cOli5))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*V(p1,cOli4)
+	*DS(p1-p1234, 0)
+	*DV(v6l8, v7l8, p3+p4, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d30 :
+
+*--#[ d31 :
+
+*	internal fields: g quark g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p2
+*	5: 6 -> 8, q -> qbar, p2-p1234
+*	6: 5 -> 7, g -> g, -p3-p4-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, g -> g, p3+p4
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d31 =
+
+	+108*(-1)
+	*VVV(-p3-p4, v5l2, p3+p4+k, v5l6, -k, v5l7)
+	*(-1/6*i_*cOlf(cOli2,cOli6,cOli7))
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*VVV(-p3-p4-k, v7l6, k, v7l7, p3+p4, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*(M(cOli5,cOli4))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*V(p2,cOli4)
+	*DS(p2-p1234, 0)
+	*DV(v5l6, v7l6, -p3-p4-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DV(v6l8, v7l8, p3+p4, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d31 :
+
+*--#[ d32 :
+
+*	internal fields: g quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p2
+*	5: 6 -> 8, q -> qbar, p2-p1234
+*	6: 5 -> 7, qbar -> q, -p3-p4-k
+*	7: 5 -> 7, q -> qbar, k
+*	8: 6 -> 7, g -> g, p3+p4
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d32 =
+
+	+6*(-1)
+	*EikV(p3+p4+k, v5l2)
+	*(cOlT(cOli6,cOli7,cOli2))
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*EikV(k, v7l8)
+	*(cOlT(cOli7,cOli6,cOli8))
+	*(M(cOli5,cOli4))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*V(p2,cOli4)
+	*DS(p2-p1234, 0)
+	*DS(-p3-p4-k, 0)
+	*DS(k, 0)
+	*DV(v6l8, v7l8, p3+p4, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d32 :
+
+*--#[ d33 :
+
+*	internal fields: g quark c c g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p2
+*	5: 6 -> 8, q -> qbar, p2-p1234
+*	6: 5 -> 7, cbar -> c, -p3-p4-k
+*	7: 5 -> 7, c -> cbar, k
+*	8: 6 -> 7, g -> g, p3+p4
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d33 =
+
+	-6*(-1)
+	*(p3(v5l2)+p4(v5l2)+k(v5l2))*(i_*cOlf(cOli6,cOli7,cOli2))
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*(k(v7l8))*(i_*cOlf(cOli7,cOli6,cOli8))
+	*(M(cOli5,cOli4))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*V(p2,cOli4)
+	*DS(p2-p1234, 0)
+	*DG(-p3-p4-k, 0)
+	*DG(k, 0)
+	*DV(v6l8, v7l8, p3+p4, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d33 :
+
+*--#[ d34 :
+
+*	internal fields: g quark f f g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 3 -> 8, -p2
+*	5: 6 -> 8, q -> qbar, p2-p1234
+*	6: 5 -> 7, fbar -> f, -p3-p4-k
+*	7: 5 -> 7, f -> fbar, k
+*	8: 6 -> 7, g -> g, p3+p4
+*	9: 4 -> 6, -p1
+
+#define nl "1"
+
+g d34 =
+
+	-6*(-1)
+	*G(0, v5l2)*(cOlT(cOli6,cOli7,cOli2))
+	*SF(0, -k, 0)
+	*G(0, v7l8)*(cOlT(cOli7,cOli6,cOli8))
+	*SF(0, -p3-p4-k, 0)
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*(M(cOli5,cOli4))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*V(p2,cOli4)
+	*DS(p2-p1234, 0)
+	*DV(v6l8, v7l8, p3+p4, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d34 :
+
+*--#[ d35 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, q -> qbar, p4+p2
+*	6: 5 -> 7, q -> qbar, -p1-p3-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, qbar -> q, p1+p3
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d35 =
+
+	+1*(-1)
+	*EikV(-p1-p3, v5l7)
+	*(cOlT(cOli2,cOli6,cOli7))
+	*(M(cOli8,cOli5))
+	*EikV(-p1-p3-k, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*EikV(p4+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p2, 0)
+	*DS(-p1-p3-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(p1+p3, 0)
+	*1
+
+;
+
+*--#] d35 :
+
+*--#[ d36 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, -p2
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, q -> qbar, p3+p2
+*	6: 5 -> 7, q -> qbar, -p1-p4-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, qbar -> q, p1+p4
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d36 =
+
+	+1*(-1)
+	*EikV(-p1-p4, v5l7)
+	*(cOlT(cOli2,cOli6,cOli7))
+	*(M(cOli8,cOli5))
+	*EikV(-p1-p4-k, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*EikV(p3+p2, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*V(p2,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p2, 0)
+	*DS(-p1-p4-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(p1+p4, 0)
+	*1
+
+;
+
+*--#] d36 :
+
+*--#[ d37 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, -p1
+*	4: 3 -> 8, -p4
+*	5: 6 -> 8, qbar -> q, p4+p1
+*	6: 5 -> 7, qbar -> q, -p2-p3-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, q -> qbar, p2+p3
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d37 =
+
+	+1*(-1)
+	*EikV(p2+p3+k, v5l7)
+	*(cOlT(cOli6,cOli2,cOli7))
+	*(M(cOli5,cOli8))
+	*EikV(p2+p3, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*V(p1,cOli3)
+	*EpsStar(v8l4,p4,cOli4)
+	*DS(p4+p1, 0)
+	*DS(-p2-p3-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(p2+p3, 0)
+	*1
+
+;
+
+*--#] d37 :
+
+*--#[ d38 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, -p1
+*	4: 3 -> 8, -p3
+*	5: 6 -> 8, qbar -> q, p3+p1
+*	6: 5 -> 7, qbar -> q, -p2-p4-k
+*	7: 5 -> 7, g -> g, k
+*	8: 6 -> 7, q -> qbar, p2+p4
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d38 =
+
+	+1*(-1)
+	*EikV(p2+p4+k, v5l7)
+	*(cOlT(cOli6,cOli2,cOli7))
+	*(M(cOli5,cOli8))
+	*EikV(p2+p4, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*V(p1,cOli3)
+	*EpsStar(v8l4,p3,cOli4)
+	*DS(p3+p1, 0)
+	*DS(-p2-p4-k, 0)
+	*DV(v5l7, v7l7, k, 0)
+	*DS(p2+p4, 0)
+	*1
+
+;
+
+*--#] d38 :
+
+*--#[ d39 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 5 -> 8, g -> g, p2-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, q -> qbar, p4+p3+k
+*	8: 6 -> 7, qbar -> q, -p4-k
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d39 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l4)
+	*(cOlT(cOli2,cOli7,cOli4))
+	*EikV(p4+k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(p4+p3+k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*EikV(k, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*DV(v5l4, v8l4, p2-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p4+p3+k, 0)
+	*DS(-p4-k, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d39 :
+
+*--#[ d40 :
+
+*	internal fields: quark quark g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 5 -> 8, q -> qbar, p2-k
+*	5: 6 -> 8, g -> g, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, g -> g, p4+p3+k
+*	8: 6 -> 7, g -> g, -p4-k
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d40 =
+
+	+36*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli4,cOli7))
+	*VVV(-p4, v6l9, -k, v6l5, p4+k, v6l8)
+	*(-1/6*i_*cOlf(cOli9,cOli5,cOli8))
+	*VVV(-p3, v7l6, p4+p3+k, v7l7, -p4-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(p2-k, v8l5)
+	*(cOlT(cOli4,cOli3,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*DS(p2-k, 0)
+	*DV(v6l5, v8l5, k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v5l7, v7l7, p4+p3+k, 0)
+	*DV(v6l8, v7l8, -p4-k, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d40 :
+
+*--#[ d41 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 5 -> 8, g -> g, p2-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, q -> qbar, p3+p4+k
+*	8: 6 -> 7, qbar -> q, -p3-k
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d41 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l4)
+	*(cOlT(cOli2,cOli7,cOli4))
+	*EikV(p3+k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(p3+p4+k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*EikV(k, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*DV(v5l4, v8l4, p2-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p3+p4+k, 0)
+	*DS(-p3-k, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d41 :
+
+*--#[ d42 :
+
+*	internal fields: quark quark g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 5 -> 8, q -> qbar, p2-k
+*	5: 6 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, g -> g, p3+p4+k
+*	8: 6 -> 7, g -> g, -p3-k
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d42 =
+
+	+36*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli4,cOli7))
+	*VVV(-p3, v6l9, -k, v6l5, p3+k, v6l8)
+	*(-1/6*i_*cOlf(cOli9,cOli5,cOli8))
+	*VVV(-p4, v7l6, p3+p4+k, v7l7, -p3-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(p2-k, v8l5)
+	*(cOlT(cOli4,cOli3,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*DS(p2-k, 0)
+	*DV(v6l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l7, v7l7, p3+p4+k, 0)
+	*DV(v6l8, v7l8, -p3-k, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d42 :
+
+*--#[ d43 :
+
+*	internal fields: quark g g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 5 -> 8, g -> g, p3-k
+*	5: 6 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, q -> qbar, p2+p4+k
+*	8: 6 -> 7, qbar -> q, -p2-k
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d43 =
+
+	+6*(-1)
+	*EikV(p1234-p1, v5l4)
+	*(cOlT(cOli2,cOli7,cOli4))
+	*EikV(p2+k, v6l5)
+	*(cOlT(cOli8,cOli9,cOli5))
+	*EikV(p2+p4+k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*VVV(-p3, v8l3, p3-k, v8l4, k, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DV(v5l4, v8l4, p3-k, 0)
+	*DV(v6l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p2+p4+k, 0)
+	*DS(-p2-k, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d43 :
+
+*--#[ d44 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 5 -> 8, q -> qbar, p3-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, g -> g, p2+p4+k
+*	8: 6 -> 7, g -> g, -p2-k
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d44 =
+
+	+6*(-1)
+	*EikV(p1234-p1, v5l7)
+	*(cOlT(cOli2,cOli4,cOli7))
+	*EikV(-k, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*VVV(-p4, v7l6, p2+p4+k, v7l7, -p2-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(p3-k, v8l3)
+	*(cOlT(cOli4,cOli5,cOli3))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l7, v7l7, p2+p4+k, 0)
+	*DV(v6l8, v7l8, -p2-k, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d44 :
+
+*--#[ d45 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 5 -> 8, g -> g, p1-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, qbar -> q, p4+p3+k
+*	8: 6 -> 7, q -> qbar, -p4-k
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d45 =
+
+	+1*(-1)
+	*EikV(-p4-p3-k, v5l4)
+	*(cOlT(cOli7,cOli2,cOli4))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(-p4-k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*DV(v5l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p4+p3+k, 0)
+	*DS(-p4-k, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d45 :
+
+*--#[ d46 :
+
+*	internal fields: quark quark g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 5 -> 8, qbar -> q, p1-k
+*	5: 6 -> 8, g -> g, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, g -> g, p4+p3+k
+*	8: 6 -> 7, g -> g, -p4-k
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d46 =
+
+	+36*(-1)
+	*EikV(-p1+k, v5l7)
+	*(cOlT(cOli4,cOli2,cOli7))
+	*VVV(-p4, v6l9, -k, v6l5, p4+k, v6l8)
+	*(-1/6*i_*cOlf(cOli9,cOli5,cOli8))
+	*VVV(-p3, v7l6, p4+p3+k, v7l7, -p4-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*DS(p1-k, 0)
+	*DV(v6l5, v8l5, k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v5l7, v7l7, p4+p3+k, 0)
+	*DV(v6l8, v7l8, -p4-k, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d46 :
+
+*--#[ d47 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 5 -> 8, g -> g, p1-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, qbar -> q, p3+p4+k
+*	8: 6 -> 7, q -> qbar, -p3-k
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d47 =
+
+	+1*(-1)
+	*EikV(-p3-p4-k, v5l4)
+	*(cOlT(cOli7,cOli2,cOli4))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(-p3-k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*DV(v5l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p3+p4+k, 0)
+	*DS(-p3-k, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d47 :
+
+*--#[ d48 :
+
+*	internal fields: quark quark g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 5 -> 8, qbar -> q, p1-k
+*	5: 6 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, g -> g, p3+p4+k
+*	8: 6 -> 7, g -> g, -p3-k
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d48 =
+
+	+36*(-1)
+	*EikV(-p1+k, v5l7)
+	*(cOlT(cOli4,cOli2,cOli7))
+	*VVV(-p3, v6l9, -k, v6l5, p3+k, v6l8)
+	*(-1/6*i_*cOlf(cOli9,cOli5,cOli8))
+	*VVV(-p4, v7l6, p3+p4+k, v7l7, -p3-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*DS(p1-k, 0)
+	*DV(v6l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l7, v7l7, p3+p4+k, 0)
+	*DV(v6l8, v7l8, -p3-k, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d48 :
+
+*--#[ d49 :
+
+*	internal fields: quark g g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 5 -> 8, g -> g, p3-k
+*	5: 6 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, qbar -> q, p1+p4+k
+*	8: 6 -> 7, q -> qbar, -p1-k
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d49 =
+
+	+6*(-1)
+	*EikV(-p1-p4-k, v5l4)
+	*(cOlT(cOli7,cOli2,cOli4))
+	*EikV(-p1, v6l5)
+	*(cOlT(cOli9,cOli8,cOli5))
+	*EikV(-p1-k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*VVV(-p3, v8l3, p3-k, v8l4, k, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DV(v5l4, v8l4, p3-k, 0)
+	*DV(v6l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p1+p4+k, 0)
+	*DS(-p1-k, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d49 :
+
+*--#[ d50 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 5 -> 8, qbar -> q, p3-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, g -> g, p1+p4+k
+*	8: 6 -> 7, g -> g, -p1-k
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d50 =
+
+	+6*(-1)
+	*EikV(-p3+k, v5l7)
+	*(cOlT(cOli4,cOli2,cOli7))
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*VVV(-p4, v7l6, p1+p4+k, v7l7, -p1-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*EikV(k, v8l3)
+	*(cOlT(cOli5,cOli4,cOli3))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l7, v7l7, p1+p4+k, 0)
+	*DV(v6l8, v7l8, -p1-k, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d50 :
+
+*--#[ d51 :
+
+*	internal fields: g quark quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, q -> qbar, -p1234-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, qbar -> q, p4+p3+k
+*	8: 6 -> 7, q -> qbar, -p4-k
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d51 =
+
+	+1*(-1)
+	*EikV(-p4-p3-k, v5l2)
+	*(cOlT(cOli7,cOli4,cOli2))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(-p4-k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p4+p3+k, 0)
+	*DS(-p4-k, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d51 :
+
+*--#[ d52 :
+
+*	internal fields: g quark quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, qbar -> q, -p1234-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, q -> qbar, p4+p3+k
+*	8: 6 -> 7, qbar -> q, -p4-k
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d52 =
+
+	+1*(-1)
+	*EikV(p1234+k, v5l2)
+	*(cOlT(cOli4,cOli7,cOli2))
+	*EikV(p4+k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(p4+p3+k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*(M(cOli5,cOli4))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p4+p3+k, 0)
+	*DS(-p4-k, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d52 :
+
+*--#[ d53 :
+
+*	internal fields: g quark quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, q -> qbar, -p1234-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, qbar -> q, p3+p4+k
+*	8: 6 -> 7, q -> qbar, -p3-k
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d53 =
+
+	+1*(-1)
+	*EikV(-p3-p4-k, v5l2)
+	*(cOlT(cOli7,cOli4,cOli2))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(-p3-k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p3+p4+k, 0)
+	*DS(-p3-k, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d53 :
+
+*--#[ d54 :
+
+*	internal fields: g quark quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, qbar -> q, -p1234-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, q -> qbar, p3+p4+k
+*	8: 6 -> 7, qbar -> q, -p3-k
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d54 =
+
+	+1*(-1)
+	*EikV(p1234+k, v5l2)
+	*(cOlT(cOli4,cOli7,cOli2))
+	*EikV(p3+k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(p3+p4+k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*(M(cOli5,cOli4))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p3+p4+k, 0)
+	*DS(-p3-k, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d54 :
+
+*--#[ d55 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, q -> qbar, -p1234-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p2
+*	7: 5 -> 7, g -> g, p4+p2+k
+*	8: 6 -> 7, q -> qbar, -p4-k
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d55 =
+
+	+1*(-1)
+	*EikV(-p1-p3, v5l7)
+	*(cOlT(cOli2,cOli4,cOli7))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(-p4-k, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p2,cOli6)
+	*DV(v5l7, v7l7, p4+p2+k, 0)
+	*DS(-p4-k, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d55 :
+
+*--#[ d56 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, q -> qbar, -p1234-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p2
+*	7: 5 -> 7, g -> g, p3+p2+k
+*	8: 6 -> 7, q -> qbar, -p3-k
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d56 =
+
+	+1*(-1)
+	*EikV(-p1-p4, v5l7)
+	*(cOlT(cOli2,cOli4,cOli7))
+	*EikV(-k, v6l9)
+	*(cOlT(cOli5,cOli8,cOli9))
+	*EikV(-p3-k, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p2,cOli6)
+	*DV(v5l7, v7l7, p3+p2+k, 0)
+	*DS(-p3-k, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d56 :
+
+*--#[ d57 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, q -> qbar, -p1234-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, g -> g, p2+p4+k
+*	8: 6 -> 7, g -> g, -p2-k
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d57 =
+
+	+6*(-1)
+	*EikV(-p1-p3, v5l7)
+	*(cOlT(cOli2,cOli4,cOli7))
+	*EikV(-k, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*VVV(-p4, v7l6, p2+p4+k, v7l7, -p2-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l7, v7l7, p2+p4+k, 0)
+	*DV(v6l8, v7l8, -p2-k, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d57 :
+
+*--#[ d58 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, q -> qbar, -p1234-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, g -> g, p2+p3+k
+*	8: 6 -> 7, g -> g, -p2-k
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d58 =
+
+	+6*(-1)
+	*EikV(-p1-p4, v5l7)
+	*(cOlT(cOli2,cOli4,cOli7))
+	*EikV(-k, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*VVV(-p3, v7l6, p2+p3+k, v7l7, -p2-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v5l7, v7l7, p2+p3+k, 0)
+	*DV(v6l8, v7l8, -p2-k, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d58 :
+
+*--#[ d59 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, qbar -> q, -p1234-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p1
+*	7: 5 -> 7, g -> g, p4+p1+k
+*	8: 6 -> 7, qbar -> q, -p4-k
+*	9: 4 -> 6, -p4
+
+#define nl "0"
+
+g d59 =
+
+	+1*(-1)
+	*EikV(p1234+k, v5l7)
+	*(cOlT(cOli4,cOli2,cOli7))
+	*EikV(p4+k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(-p1, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*(M(cOli5,cOli4))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p1,cOli6)
+	*DV(v5l7, v7l7, p4+p1+k, 0)
+	*DS(-p4-k, 0)
+	*EpsStar(v6l9,p4,cOli9)
+
+;
+
+*--#] d59 :
+
+*--#[ d60 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, qbar -> q, -p1234-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p1
+*	7: 5 -> 7, g -> g, p3+p1+k
+*	8: 6 -> 7, qbar -> q, -p3-k
+*	9: 4 -> 6, -p3
+
+#define nl "0"
+
+g d60 =
+
+	+1*(-1)
+	*EikV(p1234+k, v5l7)
+	*(cOlT(cOli4,cOli2,cOli7))
+	*EikV(p3+k, v6l9)
+	*(cOlT(cOli8,cOli5,cOli9))
+	*EikV(-p1, v7l7)
+	*(cOlT(cOli6,cOli8,cOli7))
+	*(M(cOli5,cOli4))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p1,cOli6)
+	*DV(v5l7, v7l7, p3+p1+k, 0)
+	*DS(-p3-k, 0)
+	*EpsStar(v6l9,p3,cOli9)
+
+;
+
+*--#] d60 :
+
+*--#[ d61 :
+
+*	internal fields: g quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, q -> qbar, -p1234-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p1
+*	7: 5 -> 7, qbar -> q, p2+p1+k
+*	8: 6 -> 7, g -> g, -p2-k
+*	9: 4 -> 6, -p2
+
+#define nl "0"
+
+g d61 =
+
+	+6*(-1)
+	*EikV(-p2-p1-k, v5l2)
+	*(cOlT(cOli7,cOli4,cOli2))
+	*EikV(-k, v6l8)
+	*(cOlT(cOli5,cOli9,cOli8))
+	*EikV(-p1, v7l8)
+	*(cOlT(cOli6,cOli7,cOli8))
+	*(M(cOli4,cOli5))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p1,cOli6)
+	*DS(p2+p1+k, 0)
+	*DV(v6l8, v7l8, -p2-k, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d61 :
+
+*--#[ d62 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, qbar -> q, -p1234-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, g -> g, p1+p4+k
+*	8: 6 -> 7, g -> g, -p1-k
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d62 =
+
+	+6*(-1)
+	*EikV(p1234+k, v5l7)
+	*(cOlT(cOli4,cOli2,cOli7))
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*VVV(-p4, v7l6, p1+p4+k, v7l7, -p1-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*(M(cOli5,cOli4))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l7, v7l7, p1+p4+k, 0)
+	*DV(v6l8, v7l8, -p1-k, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d62 :
+
+*--#[ d63 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, qbar -> q, -p1234-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, g -> g, p1+p3+k
+*	8: 6 -> 7, g -> g, -p1-k
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d63 =
+
+	+6*(-1)
+	*EikV(p1234+k, v5l7)
+	*(cOlT(cOli4,cOli2,cOli7))
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*VVV(-p3, v7l6, p1+p3+k, v7l7, -p1-k, v7l8)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli8))
+	*(M(cOli5,cOli4))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v5l7, v7l7, p1+p3+k, 0)
+	*DV(v6l8, v7l8, -p1-k, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d63 :
+
+*--#[ d64 :
+
+*	internal fields: g quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 5 -> 8, qbar -> q, -p1234-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p2
+*	7: 5 -> 7, q -> qbar, p1+p2+k
+*	8: 6 -> 7, g -> g, -p1-k
+*	9: 4 -> 6, -p1
+
+#define nl "0"
+
+g d64 =
+
+	+6*(-1)
+	*EikV(p1234+k, v5l2)
+	*(cOlT(cOli4,cOli7,cOli2))
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli9,cOli5,cOli8))
+	*EikV(p1+p2+k, v7l8)
+	*(cOlT(cOli7,cOli6,cOli8))
+	*(M(cOli5,cOli4))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p2,cOli6)
+	*DS(p1+p2+k, 0)
+	*DV(v6l8, v7l8, -p1-k, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d64 :
+
+*--#[ d65 :
+
+*	internal fields: g quark quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, -p3
+*	4: 5 -> 8, q -> qbar, p3-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, qbar -> q, -p1234+p4+k
+*	8: 6 -> 7, q -> qbar, p1234-k
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d65 =
+
+	+1*(-1)
+	*EikV(p1234-p4-k, v5l2)
+	*(cOlT(cOli7,cOli4,cOli2))
+	*(M(cOli5,cOli8))
+	*EikV(p1234-k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*EikV(p3-k, v8l3)
+	*(cOlT(cOli4,cOli5,cOli3))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(-p1234+p4+k, 0)
+	*DS(p1234-k, 0)
+	*1
+
+;
+
+*--#] d65 :
+
+*--#[ d66 :
+
+*	internal fields: g quark quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, -p3
+*	4: 5 -> 8, qbar -> q, p3-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, q -> qbar, -p1234+p4+k
+*	8: 6 -> 7, qbar -> q, p1234-k
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d66 =
+
+	+1*(-1)
+	*EikV(-p3+k, v5l2)
+	*(cOlT(cOli4,cOli7,cOli2))
+	*(M(cOli8,cOli5))
+	*EikV(-p1234+p4+k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*EikV(k, v8l3)
+	*(cOlT(cOli5,cOli4,cOli3))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(-p1234+p4+k, 0)
+	*DS(p1234-k, 0)
+	*1
+
+;
+
+*--#] d66 :
+
+*--#[ d67 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, -p2
+*	4: 5 -> 8, g -> g, p2-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, q -> qbar, -p1234+p4+k
+*	8: 6 -> 7, qbar -> q, p1234-k
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d67 =
+
+	+1*(-1)
+	*EikV(-p1-p3, v5l4)
+	*(cOlT(cOli2,cOli7,cOli4))
+	*(M(cOli8,cOli5))
+	*EikV(-p1234+p4+k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*EikV(k, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*V(p2,cOli3)
+	*DV(v5l4, v8l4, p2-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(-p1234+p4+k, 0)
+	*DS(p1234-k, 0)
+	*1
+
+;
+
+*--#] d67 :
+
+*--#[ d68 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, -p2
+*	4: 5 -> 8, g -> g, p2-k
+*	5: 6 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, q -> qbar, -p1234+p3+k
+*	8: 6 -> 7, qbar -> q, p1234-k
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d68 =
+
+	+1*(-1)
+	*EikV(-p1-p4, v5l4)
+	*(cOlT(cOli2,cOli7,cOli4))
+	*(M(cOli8,cOli5))
+	*EikV(-p1234+p3+k, v7l6)
+	*(cOlT(cOli7,cOli8,cOli6))
+	*EikV(k, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*V(p2,cOli3)
+	*DV(v5l4, v8l4, p2-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(-p1234+p3+k, 0)
+	*DS(p1234-k, 0)
+	*1
+
+;
+
+*--#] d68 :
+
+*--#[ d69 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, -p1
+*	4: 5 -> 8, g -> g, p1-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 5 -> 7, qbar -> q, -p1234+p4+k
+*	8: 6 -> 7, q -> qbar, p1234-k
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d69 =
+
+	+1*(-1)
+	*EikV(p1234-p4-k, v5l4)
+	*(cOlT(cOli7,cOli2,cOli4))
+	*(M(cOli5,cOli8))
+	*EikV(p1234-k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*V(p1,cOli3)
+	*DV(v5l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(-p1234+p4+k, 0)
+	*DS(p1234-k, 0)
+	*1
+
+;
+
+*--#] d69 :
+
+*--#[ d70 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, -p1
+*	4: 5 -> 8, g -> g, p1-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 5 -> 7, qbar -> q, -p1234+p3+k
+*	8: 6 -> 7, q -> qbar, p1234-k
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d70 =
+
+	+1*(-1)
+	*EikV(p1234-p3-k, v5l4)
+	*(cOlT(cOli7,cOli2,cOli4))
+	*(M(cOli5,cOli8))
+	*EikV(p1234-k, v7l6)
+	*(cOlT(cOli8,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*V(p1,cOli3)
+	*DV(v5l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(-p1234+p3+k, 0)
+	*DS(p1234-k, 0)
+	*1
+
+;
+
+*--#] d70 :
+
+*--#[ d71 :
+
+*	internal fields: g g quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, -p1
+*	4: 5 -> 8, g -> g, p1-k
+*	5: 6 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p2
+*	7: 5 -> 7, g -> g, -p1234+p2+k
+*	8: 6 -> 7, q -> qbar, p1234-k
+*	9: 4 -> 6, p1234
+
+#define nl "0"
+
+g d71 =
+
+	+36*(-1)
+	*VVV(-p3-p4, v5l2, -p1+k, v5l4, p1234-p2-k, v5l7)
+	*(-1/6*i_*cOlf(cOli2,cOli4,cOli7))
+	*(M(cOli5,cOli8))
+	*EikV(p1234-k, v7l7)
+	*(cOlT(cOli8,cOli6,cOli7))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*V(p1,cOli3)
+	*DV(v5l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*V(p2,cOli6)
+	*DV(v5l7, v7l7, -p1234+p2+k, 0)
+	*DS(p1234-k, 0)
+	*1
+
+;
+
+*--#] d71 :
+
+*--#[ d72 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 6 -> 8, g -> g, p2-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, q -> qbar, p3+k
+*	8: 5 -> 6, q -> qbar, p3+p2
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d72 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l9)
+	*(cOlT(cOli2,cOli8,cOli9))
+	*EikV(p3+p2, v6l4)
+	*(cOlT(cOli8,cOli7,cOli4))
+	*EikV(p3+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*EikV(k, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*DV(v6l4, v8l4, p2-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DS(p3+p2, 0)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d72 :
+
+*--#[ d73 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 6 -> 8, q -> qbar, p2-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, g -> g, p3+k
+*	8: 5 -> 6, q -> qbar, p3+p2
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d73 =
+
+	+6*(-1)
+	*EikV(p1234-p1, v5l9)
+	*(cOlT(cOli2,cOli8,cOli9))
+	*EikV(p3+p2, v6l7)
+	*(cOlT(cOli8,cOli4,cOli7))
+	*VVV(-p3, v7l6, p3+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(p2-k, v8l5)
+	*(cOlT(cOli4,cOli3,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*DS(p2-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v6l7, v7l7, p3+k, 0)
+	*DS(p3+p2, 0)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d73 :
+
+*--#[ d74 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 6 -> 8, g -> g, p2-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, q -> qbar, p4+k
+*	8: 5 -> 6, q -> qbar, p4+p2
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d74 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l9)
+	*(cOlT(cOli2,cOli8,cOli9))
+	*EikV(p4+p2, v6l4)
+	*(cOlT(cOli8,cOli7,cOli4))
+	*EikV(p4+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*EikV(k, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*DV(v6l4, v8l4, p2-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DS(p4+p2, 0)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d74 :
+
+*--#[ d75 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p2
+*	4: 6 -> 8, q -> qbar, p2-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, g -> g, p4+k
+*	8: 5 -> 6, q -> qbar, p4+p2
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d75 =
+
+	+6*(-1)
+	*EikV(p1234-p1, v5l9)
+	*(cOlT(cOli2,cOli8,cOli9))
+	*EikV(p4+p2, v6l7)
+	*(cOlT(cOli8,cOli4,cOli7))
+	*VVV(-p4, v7l6, p4+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(p2-k, v8l5)
+	*(cOlT(cOli4,cOli3,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*V(p2,cOli3)
+	*DS(p2-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p4+k, 0)
+	*DS(p4+p2, 0)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d75 :
+
+*--#[ d76 :
+
+*	internal fields: quark g g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, g -> g, p3-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, g -> g, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d76 =
+
+	+216*(-1)
+	*EikV(p1234-p1, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*VVV(p4+p3, v6l8, -p3+k, v6l4, -p4-k, v6l7)
+	*(-1/6*i_*cOlf(cOli8,cOli4,cOli7))
+	*VVV(-p4, v7l6, p4+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*VVV(-p3, v8l3, p3-k, v8l4, k, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DV(v6l4, v8l4, p3-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d76 :
+
+*--#[ d77 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, q -> qbar, p3-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, qbar -> q, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d77 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*EikV(-p4-k, v6l8)
+	*(cOlT(cOli7,cOli4,cOli8))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*EikV(p3-k, v8l3)
+	*(cOlT(cOli4,cOli5,cOli3))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d77 :
+
+*--#[ d78 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, qbar -> q, p3-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, q -> qbar, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d78 =
+
+	+1*(-1)
+	*EikV(p1234-p1, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*EikV(-p3+k, v6l8)
+	*(cOlT(cOli4,cOli7,cOli8))
+	*EikV(p4+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*EikV(k, v8l3)
+	*(cOlT(cOli5,cOli4,cOli3))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d78 :
+
+*--#[ d79 :
+
+*	internal fields: quark c c c g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, c -> cbar, p3-k
+*	5: 7 -> 8, cbar -> c, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, cbar -> c, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d79 =
+
+	-1*(-1)
+	*EikV(p1234-p1, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*(-p4(v6l8)-k(v6l8))*(i_*cOlf(cOli7,cOli4,cOli8))
+	*(-k(v7l6))*(i_*cOlf(cOli5,cOli7,cOli6))
+	*(p3(v8l3)-k(v8l3))*(i_*cOlf(cOli4,cOli5,cOli3))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DG(p3-k, 0)
+	*DG(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DG(p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d79 :
+
+*--#[ d80 :
+
+*	internal fields: quark c c c g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, cbar -> c, p3-k
+*	5: 7 -> 8, c -> cbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, c -> cbar, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d80 =
+
+	-1*(-1)
+	*EikV(p1234-p1, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*(-p3(v6l8)+k(v6l8))*(i_*cOlf(cOli4,cOli7,cOli8))
+	*(p4(v7l6)+k(v7l6))*(i_*cOlf(cOli7,cOli5,cOli6))
+	*(k(v8l3))*(i_*cOlf(cOli5,cOli4,cOli3))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DG(p3-k, 0)
+	*DG(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DG(p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d80 :
+
+*--#[ d81 :
+
+*	internal fields: quark f f f g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, f -> fbar, p3-k
+*	5: 7 -> 8, fbar -> f, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, fbar -> f, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p2
+
+#define nl "1"
+
+g d81 =
+
+	-1*(-1)
+	*G(0, v6l8)*(cOlT(cOli7,cOli4,cOli8))
+	*SF(0, -p3+k, 0)
+	*G(0, v8l3)*(cOlT(cOli4,cOli5,cOli3))
+	*SF(0, k, 0)
+	*G(0, v7l6)*(cOlT(cOli5,cOli7,cOli6))
+	*SF(0, p4+k, 0)
+	*EikV(p1234-p1, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d81 :
+
+*--#[ d82 :
+
+*	internal fields: quark f f f g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p1
+*	2: 5 -> 9, qbar -> q, -p1234+p1
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, fbar -> f, p3-k
+*	5: 7 -> 8, f -> fbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, f -> fbar, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p2
+
+#define nl "1"
+
+g d82 =
+
+	-1*(-1)
+	*G(0, v6l8)*(cOlT(cOli4,cOli7,cOli8))
+	*SF(0, -p4-k, 0)
+	*G(0, v7l6)*(cOlT(cOli7,cOli5,cOli6))
+	*SF(0, -k, 0)
+	*G(0, v8l3)*(cOlT(cOli5,cOli4,cOli3))
+	*SF(0, p3-k, 0)
+	*EikV(p1234-p1, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*(M(cOli1,cOli2))
+	*1
+	*V(p1,cOli1)
+	*DS(-p1234+p1, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d82 :
+
+*--#[ d83 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 6 -> 8, g -> g, p1-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, qbar -> q, p3+k
+*	8: 5 -> 6, qbar -> q, p3+p1
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d83 =
+
+	+1*(-1)
+	*EikV(-p3-p1, v5l9)
+	*(cOlT(cOli8,cOli2,cOli9))
+	*EikV(-p3-k, v6l4)
+	*(cOlT(cOli7,cOli8,cOli4))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*DV(v6l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DS(p3+p1, 0)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d83 :
+
+*--#[ d84 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 6 -> 8, qbar -> q, p1-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, g -> g, p3+k
+*	8: 5 -> 6, qbar -> q, p3+p1
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d84 =
+
+	+6*(-1)
+	*EikV(-p3-p1, v5l9)
+	*(cOlT(cOli8,cOli2,cOli9))
+	*EikV(-p1+k, v6l7)
+	*(cOlT(cOli4,cOli8,cOli7))
+	*VVV(-p3, v7l6, p3+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*DS(p1-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v6l7, v7l7, p3+k, 0)
+	*DS(p3+p1, 0)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d84 :
+
+*--#[ d85 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 6 -> 8, g -> g, p1-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, qbar -> q, p4+k
+*	8: 5 -> 6, qbar -> q, p4+p1
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d85 =
+
+	+1*(-1)
+	*EikV(-p4-p1, v5l9)
+	*(cOlT(cOli8,cOli2,cOli9))
+	*EikV(-p4-k, v6l4)
+	*(cOlT(cOli7,cOli8,cOli4))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*DV(v6l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DS(p4+p1, 0)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d85 :
+
+*--#[ d86 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p1
+*	4: 6 -> 8, qbar -> q, p1-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, g -> g, p4+k
+*	8: 5 -> 6, qbar -> q, p4+p1
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d86 =
+
+	+6*(-1)
+	*EikV(-p4-p1, v5l9)
+	*(cOlT(cOli8,cOli2,cOli9))
+	*EikV(-p1+k, v6l7)
+	*(cOlT(cOli4,cOli8,cOli7))
+	*VVV(-p4, v7l6, p4+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*V(p1,cOli3)
+	*DS(p1-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p4+k, 0)
+	*DS(p4+p1, 0)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d86 :
+
+*--#[ d87 :
+
+*	internal fields: quark g g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, g -> g, p3-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, g -> g, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d87 =
+
+	+216*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*VVV(p4+p3, v6l8, -p3+k, v6l4, -p4-k, v6l7)
+	*(-1/6*i_*cOlf(cOli8,cOli4,cOli7))
+	*VVV(-p4, v7l6, p4+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*VVV(-p3, v8l3, p3-k, v8l4, k, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DV(v6l4, v8l4, p3-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d87 :
+
+*--#[ d88 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, q -> qbar, p3-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, qbar -> q, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d88 =
+
+	+1*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*EikV(-p4-k, v6l8)
+	*(cOlT(cOli7,cOli4,cOli8))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*EikV(p3-k, v8l3)
+	*(cOlT(cOli4,cOli5,cOli3))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d88 :
+
+*--#[ d89 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, qbar -> q, p3-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, q -> qbar, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d89 =
+
+	+1*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*EikV(-p3+k, v6l8)
+	*(cOlT(cOli4,cOli7,cOli8))
+	*EikV(p4+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*EikV(k, v8l3)
+	*(cOlT(cOli5,cOli4,cOli3))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(p3-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d89 :
+
+*--#[ d90 :
+
+*	internal fields: quark c c c g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, c -> cbar, p3-k
+*	5: 7 -> 8, cbar -> c, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, cbar -> c, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d90 =
+
+	-1*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*(-p4(v6l8)-k(v6l8))*(i_*cOlf(cOli7,cOli4,cOli8))
+	*(-k(v7l6))*(i_*cOlf(cOli5,cOli7,cOli6))
+	*(p3(v8l3)-k(v8l3))*(i_*cOlf(cOli4,cOli5,cOli3))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DG(p3-k, 0)
+	*DG(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DG(p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d90 :
+
+*--#[ d91 :
+
+*	internal fields: quark c c c g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, cbar -> c, p3-k
+*	5: 7 -> 8, c -> cbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, c -> cbar, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d91 =
+
+	-1*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*(-p3(v6l8)+k(v6l8))*(i_*cOlf(cOli4,cOli7,cOli8))
+	*(p4(v7l6)+k(v7l6))*(i_*cOlf(cOli7,cOli5,cOli6))
+	*(k(v8l3))*(i_*cOlf(cOli5,cOli4,cOli3))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DG(p3-k, 0)
+	*DG(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DG(p4+k, 0)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d91 :
+
+*--#[ d92 :
+
+*	internal fields: quark f f f g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, f -> fbar, p3-k
+*	5: 7 -> 8, fbar -> f, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, fbar -> f, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p1
+
+#define nl "1"
+
+g d92 =
+
+	-1*(-1)
+	*G(0, v6l8)*(cOlT(cOli7,cOli4,cOli8))
+	*SF(0, -p3+k, 0)
+	*G(0, v8l3)*(cOlT(cOli4,cOli5,cOli3))
+	*SF(0, k, 0)
+	*G(0, v7l6)*(cOlT(cOli5,cOli7,cOli6))
+	*SF(0, p4+k, 0)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d92 :
+
+*--#[ d93 :
+
+*	internal fields: quark f f f g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, q -> qbar, -p1234+p2
+*	3: 2 -> 8, -p3
+*	4: 6 -> 8, fbar -> f, p3-k
+*	5: 7 -> 8, f -> fbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, f -> fbar, p4+k
+*	8: 5 -> 6, g -> g, p4+p3
+*	9: 4 -> 5, -p1
+
+#define nl "1"
+
+g d93 =
+
+	-1*(-1)
+	*G(0, v6l8)*(cOlT(cOli4,cOli7,cOli8))
+	*SF(0, -p4-k, 0)
+	*G(0, v7l6)*(cOlT(cOli7,cOli5,cOli6))
+	*SF(0, -k, 0)
+	*G(0, v8l3)*(cOlT(cOli5,cOli4,cOli3))
+	*SF(0, p3-k, 0)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*(M(cOli2,cOli1))
+	*1
+	*V(p2,cOli1)
+	*DS(-p1234+p2, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v5l8, v6l8, p4+p3, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d93 :
+
+*--#[ d94 :
+
+*	internal fields: g quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, qbar -> q, p3+k
+*	8: 5 -> 6, g -> g, p3-p1234
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d94 =
+
+	+6*(-1)
+	*VVV(-p4, v5l9, -p1-p2, v5l2, -p3+p1234, v5l8)
+	*(-1/6*i_*cOlf(cOli9,cOli2,cOli8))
+	*EikV(-p3-k, v6l8)
+	*(cOlT(cOli7,cOli4,cOli8))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DV(v5l8, v6l8, p3-p1234, 0)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d94 :
+
+*--#[ d95 :
+
+*	internal fields: g quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, q -> qbar, p3+k
+*	8: 5 -> 6, g -> g, p3-p1234
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d95 =
+
+	+6*(-1)
+	*VVV(-p4, v5l9, -p1-p2, v5l2, -p3+p1234, v5l8)
+	*(-1/6*i_*cOlf(cOli9,cOli2,cOli8))
+	*EikV(p1234+k, v6l8)
+	*(cOlT(cOli4,cOli7,cOli8))
+	*EikV(p3+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*(M(cOli5,cOli4))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DV(v5l8, v6l8, p3-p1234, 0)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d95 :
+
+*--#[ d96 :
+
+*	internal fields: g quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, qbar -> q, p4+k
+*	8: 5 -> 6, g -> g, p4-p1234
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d96 =
+
+	+6*(-1)
+	*VVV(-p3, v5l9, -p1-p2, v5l2, -p4+p1234, v5l8)
+	*(-1/6*i_*cOlf(cOli9,cOli2,cOli8))
+	*EikV(-p4-k, v6l8)
+	*(cOlT(cOli7,cOli4,cOli8))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4-p1234, 0)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d96 :
+
+*--#[ d97 :
+
+*	internal fields: g quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p2
+*	2: 5 -> 9, g -> g, p1+p2
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, q -> qbar, p4+k
+*	8: 5 -> 6, g -> g, p4-p1234
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d97 =
+
+	+6*(-1)
+	*VVV(-p3, v5l9, -p1-p2, v5l2, -p4+p1234, v5l8)
+	*(-1/6*i_*cOlf(cOli9,cOli2,cOli8))
+	*EikV(p1234+k, v6l8)
+	*(cOlT(cOli4,cOli7,cOli8))
+	*EikV(p4+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*(M(cOli5,cOli4))
+	*EikV(-p1, v9l2)
+	*(cOlT(cOli0,cOli1,cOli2))
+	*V(p1,cOli0)
+	*V(p2,cOli1)
+	*DV(v5l2, v9l2, p1+p2, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4-p1234, 0)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d97 :
+
+*--#[ d98 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p2
+*	7: 6 -> 7, g -> g, p2+k
+*	8: 5 -> 6, q -> qbar, p2-p1234
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d98 =
+
+	+1*(-1)
+	*EikV(-p1-p3, v5l9)
+	*(cOlT(cOli2,cOli8,cOli9))
+	*EikV(p2-p1234, v6l7)
+	*(cOlT(cOli8,cOli4,cOli7))
+	*EikV(-k, v7l7)
+	*(cOlT(cOli5,cOli6,cOli7))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p2,cOli6)
+	*DV(v6l7, v7l7, p2+k, 0)
+	*DS(p2-p1234, 0)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d98 :
+
+*--#[ d99 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p2
+*	7: 6 -> 7, g -> g, p2+k
+*	8: 5 -> 6, q -> qbar, p2-p1234
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d99 =
+
+	+1*(-1)
+	*EikV(-p1-p4, v5l9)
+	*(cOlT(cOli2,cOli8,cOli9))
+	*EikV(p2-p1234, v6l7)
+	*(cOlT(cOli8,cOli4,cOli7))
+	*EikV(-k, v7l7)
+	*(cOlT(cOli5,cOli6,cOli7))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p2,cOli6)
+	*DV(v6l7, v7l7, p2+k, 0)
+	*DS(p2-p1234, 0)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d99 :
+
+*--#[ d100 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, qbar -> q, p4+k
+*	8: 5 -> 6, g -> g, p4-p1234
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d100 =
+
+	+1*(-1)
+	*EikV(-p1-p3, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*EikV(-p4-k, v6l8)
+	*(cOlT(cOli7,cOli4,cOli8))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4-p1234, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d100 :
+
+*--#[ d101 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, q -> qbar, p4+k
+*	8: 5 -> 6, g -> g, p4-p1234
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d101 =
+
+	+1*(-1)
+	*EikV(-p1-p3, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*EikV(p1234+k, v6l8)
+	*(cOlT(cOli4,cOli7,cOli8))
+	*EikV(p4+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*(M(cOli5,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4-p1234, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d101 :
+
+*--#[ d102 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, qbar -> q, p3+k
+*	8: 5 -> 6, g -> g, p3-p1234
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d102 =
+
+	+1*(-1)
+	*EikV(-p1-p4, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*EikV(-p3-k, v6l8)
+	*(cOlT(cOli7,cOli4,cOli8))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*(M(cOli4,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DV(v5l8, v6l8, p3-p1234, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d102 :
+
+*--#[ d103 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, q -> qbar, p3+k
+*	8: 5 -> 6, g -> g, p3-p1234
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d103 =
+
+	+1*(-1)
+	*EikV(-p1-p4, v5l8)
+	*(cOlT(cOli2,cOli9,cOli8))
+	*EikV(p1234+k, v6l8)
+	*(cOlT(cOli4,cOli7,cOli8))
+	*EikV(p3+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*(M(cOli5,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DV(v5l8, v6l8, p3-p1234, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d103 :
+
+*--#[ d104 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p1
+*	7: 6 -> 7, g -> g, p1+k
+*	8: 5 -> 6, qbar -> q, p1-p1234
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d104 =
+
+	+1*(-1)
+	*EikV(-p1+p1234, v5l9)
+	*(cOlT(cOli8,cOli2,cOli9))
+	*EikV(p1234+k, v6l7)
+	*(cOlT(cOli4,cOli8,cOli7))
+	*EikV(-p1, v7l7)
+	*(cOlT(cOli6,cOli5,cOli7))
+	*(M(cOli5,cOli4))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p1,cOli6)
+	*DV(v6l7, v7l7, p1+k, 0)
+	*DS(p1-p1234, 0)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d104 :
+
+*--#[ d105 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p1
+*	7: 6 -> 7, g -> g, p1+k
+*	8: 5 -> 6, qbar -> q, p1-p1234
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d105 =
+
+	+1*(-1)
+	*EikV(-p1+p1234, v5l9)
+	*(cOlT(cOli8,cOli2,cOli9))
+	*EikV(p1234+k, v6l7)
+	*(cOlT(cOli4,cOli8,cOli7))
+	*EikV(-p1, v7l7)
+	*(cOlT(cOli6,cOli5,cOli7))
+	*(M(cOli5,cOli4))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p1,cOli6)
+	*DV(v6l7, v7l7, p1+k, 0)
+	*DS(p1-p1234, 0)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d105 :
+
+*--#[ d106 :
+
+*	internal fields: g quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p1
+*	7: 6 -> 7, g -> g, p1+k
+*	8: 5 -> 6, qbar -> q, p1-p1234
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d106 =
+
+	+6*(-1)
+	*EikV(-p1+p1234, v5l2)
+	*(cOlT(cOli8,cOli9,cOli2))
+	*EikV(p1234+k, v6l7)
+	*(cOlT(cOli4,cOli8,cOli7))
+	*EikV(-p1, v7l7)
+	*(cOlT(cOli6,cOli5,cOli7))
+	*(M(cOli5,cOli4))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p1,cOli6)
+	*DV(v6l7, v7l7, p1+k, 0)
+	*DS(p1-p1234, 0)
+	*V(p2,cOli9)
+
+;
+
+*--#] d106 :
+
+*--#[ d107 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, qbar -> q, p4+k
+*	8: 5 -> 6, g -> g, p4-p1234
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d107 =
+
+	+1*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*EikV(-p4-k, v6l8)
+	*(cOlT(cOli7,cOli4,cOli8))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*(M(cOli4,cOli5))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4-p1234, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d107 :
+
+*--#[ d108 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, q -> qbar, p4+k
+*	8: 5 -> 6, g -> g, p4-p1234
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d108 =
+
+	+1*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*EikV(p1234+k, v6l8)
+	*(cOlT(cOli4,cOli7,cOli8))
+	*EikV(p4+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*(M(cOli5,cOli4))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DV(v5l8, v6l8, p4-p1234, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d108 :
+
+*--#[ d109 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, qbar -> q, p3+k
+*	8: 5 -> 6, g -> g, p3-p1234
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d109 =
+
+	+1*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*EikV(-p3-k, v6l8)
+	*(cOlT(cOli7,cOli4,cOli8))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*(M(cOli4,cOli5))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DV(v5l8, v6l8, p3-p1234, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d109 :
+
+*--#[ d110 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, qbar -> q, -p1234-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, q -> qbar, p3+k
+*	8: 5 -> 6, g -> g, p3-p1234
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d110 =
+
+	+1*(-1)
+	*EikV(-p1, v5l8)
+	*(cOlT(cOli9,cOli2,cOli8))
+	*EikV(p1234+k, v6l8)
+	*(cOlT(cOli4,cOli7,cOli8))
+	*EikV(p3+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*(M(cOli5,cOli4))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DV(v5l8, v6l8, p3-p1234, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d110 :
+
+*--#[ d111 :
+
+*	internal fields: g quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p3
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, g -> g, p3+p4
+*	3: 2 -> 8, p1234
+*	4: 6 -> 8, q -> qbar, -p1234-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p2
+*	7: 6 -> 7, g -> g, p2+k
+*	8: 5 -> 6, q -> qbar, p2-p1234
+*	9: 4 -> 5, -p1
+
+#define nl "0"
+
+g d111 =
+
+	+6*(-1)
+	*EikV(-p1, v5l2)
+	*(cOlT(cOli9,cOli8,cOli2))
+	*EikV(p2-p1234, v6l7)
+	*(cOlT(cOli8,cOli4,cOli7))
+	*EikV(-k, v7l7)
+	*(cOlT(cOli5,cOli6,cOli7))
+	*(M(cOli4,cOli5))
+	*VVV(-p3, v9l0, -p4, v9l1, p3+p4, v9l2)
+	*(-1/6*i_*cOlf(cOli0,cOli1,cOli2))
+	*EpsStar(v9l0,p3,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DV(v5l2, v9l2, p3+p4, 0)
+	*1
+	*DS(-p1234-k, 0)
+	*DS(k, 0)
+	*V(p2,cOli6)
+	*DV(v6l7, v7l7, p2+k, 0)
+	*DS(p2-p1234, 0)
+	*V(p1,cOli9)
+
+;
+
+*--#] d111 :
+
+*--#[ d112 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, -p2
+*	4: 6 -> 8, g -> g, p2-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, q -> qbar, p4+k
+*	8: 5 -> 6, q -> qbar, p4+p2
+*	9: 4 -> 5, p1234
+
+#define nl "0"
+
+g d112 =
+
+	+1*(-1)
+	*(M(cOli2,cOli8))
+	*EikV(p4+p2, v6l4)
+	*(cOlT(cOli8,cOli7,cOli4))
+	*EikV(p4+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*EikV(k, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*V(p2,cOli3)
+	*DV(v6l4, v8l4, p2-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DS(p4+p2, 0)
+	*1
+
+;
+
+*--#] d112 :
+
+*--#[ d113 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, qbar -> q, p1+p3
+*	3: 2 -> 8, -p2
+*	4: 6 -> 8, q -> qbar, p2-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, g -> g, p4+k
+*	8: 5 -> 6, q -> qbar, p4+p2
+*	9: 4 -> 5, p1234
+
+#define nl "0"
+
+g d113 =
+
+	+6*(-1)
+	*(M(cOli2,cOli8))
+	*EikV(p4+p2, v6l7)
+	*(cOlT(cOli8,cOli4,cOli7))
+	*VVV(-p4, v7l6, p4+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(p2-k, v8l5)
+	*(cOlT(cOli4,cOli3,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p1+p3, 0)
+	*V(p2,cOli3)
+	*DS(p2-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p4+k, 0)
+	*DS(p4+p2, 0)
+	*1
+
+;
+
+*--#] d113 :
+
+*--#[ d114 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, -p2
+*	4: 6 -> 8, g -> g, p2-k
+*	5: 7 -> 8, q -> qbar, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, q -> qbar, p3+k
+*	8: 5 -> 6, q -> qbar, p3+p2
+*	9: 4 -> 5, p1234
+
+#define nl "0"
+
+g d114 =
+
+	+1*(-1)
+	*(M(cOli2,cOli8))
+	*EikV(p3+p2, v6l4)
+	*(cOlT(cOli8,cOli7,cOli4))
+	*EikV(p3+k, v7l6)
+	*(cOlT(cOli7,cOli5,cOli6))
+	*EikV(k, v8l4)
+	*(cOlT(cOli5,cOli3,cOli4))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*V(p2,cOli3)
+	*DV(v6l4, v8l4, p2-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DS(p3+p2, 0)
+	*1
+
+;
+
+*--#] d114 :
+
+*--#[ d115 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p1
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, qbar -> q, p1+p4
+*	3: 2 -> 8, -p2
+*	4: 6 -> 8, q -> qbar, p2-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, g -> g, p3+k
+*	8: 5 -> 6, q -> qbar, p3+p2
+*	9: 4 -> 5, p1234
+
+#define nl "0"
+
+g d115 =
+
+	+6*(-1)
+	*(M(cOli2,cOli8))
+	*EikV(p3+p2, v6l7)
+	*(cOlT(cOli8,cOli4,cOli7))
+	*VVV(-p3, v7l6, p3+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(p2-k, v8l5)
+	*(cOlT(cOli4,cOli3,cOli5))
+	*EikV(-p1, v9l1)
+	*(cOlT(cOli0,cOli2,cOli1))
+	*V(p1,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p1+p4, 0)
+	*V(p2,cOli3)
+	*DS(p2-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v6l7, v7l7, p3+k, 0)
+	*DS(p3+p2, 0)
+	*1
+
+;
+
+*--#] d115 :
+
+*--#[ d116 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, -p1
+*	4: 6 -> 8, g -> g, p1-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, qbar -> q, p4+k
+*	8: 5 -> 6, qbar -> q, p4+p1
+*	9: 4 -> 5, p1234
+
+#define nl "0"
+
+g d116 =
+
+	+1*(-1)
+	*(M(cOli8,cOli2))
+	*EikV(-p4-k, v6l4)
+	*(cOlT(cOli7,cOli8,cOli4))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*V(p1,cOli3)
+	*DV(v6l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p4+k, 0)
+	*DS(p4+p1, 0)
+	*1
+
+;
+
+*--#] d116 :
+
+*--#[ d117 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p3
+*	2: 5 -> 9, q -> qbar, p2+p3
+*	3: 2 -> 8, -p1
+*	4: 6 -> 8, qbar -> q, p1-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p4
+*	7: 6 -> 7, g -> g, p4+k
+*	8: 5 -> 6, qbar -> q, p4+p1
+*	9: 4 -> 5, p1234
+
+#define nl "0"
+
+g d117 =
+
+	+6*(-1)
+	*(M(cOli8,cOli2))
+	*EikV(-p1+k, v6l7)
+	*(cOlT(cOli4,cOli8,cOli7))
+	*VVV(-p4, v7l6, p4+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*EikV(p2+p3, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p3,cOli1)
+	*DS(p2+p3, 0)
+	*V(p1,cOli3)
+	*DS(p1-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p4+k, 0)
+	*DS(p4+p1, 0)
+	*1
+
+;
+
+*--#] d117 :
+
+*--#[ d118 :
+
+*	internal fields: quark g quark quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, -p1
+*	4: 6 -> 8, g -> g, p1-k
+*	5: 7 -> 8, qbar -> q, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, qbar -> q, p3+k
+*	8: 5 -> 6, qbar -> q, p3+p1
+*	9: 4 -> 5, p1234
+
+#define nl "0"
+
+g d118 =
+
+	+1*(-1)
+	*(M(cOli8,cOli2))
+	*EikV(-p3-k, v6l4)
+	*(cOlT(cOli7,cOli8,cOli4))
+	*EikV(-k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*V(p1,cOli3)
+	*DV(v6l4, v8l4, p1-k, 0)
+	*DS(k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p3+k, 0)
+	*DS(p3+p1, 0)
+	*1
+
+;
+
+*--#] d118 :
+
+*--#[ d119 :
+
+*	internal fields: quark quark g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, -p2
+*	1: 1 -> 9, -p4
+*	2: 5 -> 9, q -> qbar, p2+p4
+*	3: 2 -> 8, -p1
+*	4: 6 -> 8, qbar -> q, p1-k
+*	5: 7 -> 8, g -> g, k
+*	6: 3 -> 7, -p3
+*	7: 6 -> 7, g -> g, p3+k
+*	8: 5 -> 6, qbar -> q, p3+p1
+*	9: 4 -> 5, p1234
+
+#define nl "0"
+
+g d119 =
+
+	+6*(-1)
+	*(M(cOli8,cOli2))
+	*EikV(-p1+k, v6l7)
+	*(cOlT(cOli4,cOli8,cOli7))
+	*VVV(-p3, v7l6, p3+k, v7l7, -k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*EikV(p2+p4, v9l1)
+	*(cOlT(cOli2,cOli0,cOli1))
+	*V(p2,cOli0)
+	*EpsStar(v9l1,p4,cOli1)
+	*DS(p2+p4, 0)
+	*V(p1,cOli3)
+	*DS(p1-k, 0)
+	*DV(v7l5, v8l5, k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v6l7, v7l7, p3+k, 0)
+	*DS(p3+p1, 0)
+	*1
+
+;
+
+*--#] d119 :
+
+*--#[ d120 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, q -> qbar, -p4-k
+*	2: 6 -> 9, qbar -> q, -p1234+p4+k
+*	3: 1 -> 8, -p1
+*	4: 5 -> 8, qbar -> q, k
+*	5: 7 -> 8, g -> g, p1-k
+*	6: 2 -> 7, -p2
+*	7: 6 -> 7, q -> qbar, p1+p2-k
+*	8: 3 -> 6, -p3
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d120 =
+
+	+1*(-1)
+	*EikV(-k, v5l9)
+	*(cOlT(cOli4,cOli1,cOli9))
+	*EikV(p1234-p4-k, v6l8)
+	*(cOlT(cOli2,cOli7,cOli8))
+	*EikV(p1+p2-k, v7l5)
+	*(cOlT(cOli7,cOli6,cOli5))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*DS(-p4-k, 0)
+	*DS(-p1234+p4+k, 0)
+	*V(p1,cOli3)
+	*DS(k, 0)
+	*DV(v7l5, v8l5, p1-k, 0)
+	*V(p2,cOli6)
+	*DS(p1+p2-k, 0)
+	*EpsStar(v6l8,p3,cOli8)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d120 :
+
+*--#[ d121 :
+
+*	internal fields: quark quark quark g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, q -> qbar, -p3-k
+*	2: 6 -> 9, qbar -> q, -p1234+p3+k
+*	3: 1 -> 8, -p1
+*	4: 5 -> 8, qbar -> q, k
+*	5: 7 -> 8, g -> g, p1-k
+*	6: 2 -> 7, -p2
+*	7: 6 -> 7, q -> qbar, p1+p2-k
+*	8: 3 -> 6, -p4
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d121 =
+
+	+1*(-1)
+	*EikV(-k, v5l9)
+	*(cOlT(cOli4,cOli1,cOli9))
+	*EikV(p1234-p3-k, v6l8)
+	*(cOlT(cOli2,cOli7,cOli8))
+	*EikV(p1+p2-k, v7l5)
+	*(cOlT(cOli7,cOli6,cOli5))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*DS(-p3-k, 0)
+	*DS(-p1234+p3+k, 0)
+	*V(p1,cOli3)
+	*DS(k, 0)
+	*DV(v7l5, v8l5, p1-k, 0)
+	*V(p2,cOli6)
+	*DS(p1+p2-k, 0)
+	*EpsStar(v6l8,p4,cOli8)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d121 :
+
+*--#[ d122 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, q -> qbar, -p4-k
+*	2: 6 -> 9, qbar -> q, -p1234+p4+k
+*	3: 1 -> 8, -p1
+*	4: 5 -> 8, qbar -> q, k
+*	5: 7 -> 8, g -> g, p1-k
+*	6: 2 -> 7, -p3
+*	7: 6 -> 7, g -> g, p1+p3-k
+*	8: 3 -> 6, -p2
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d122 =
+
+	+6*(-1)
+	*EikV(-k, v5l9)
+	*(cOlT(cOli4,cOli1,cOli9))
+	*EikV(p1234-p4-k, v6l7)
+	*(cOlT(cOli2,cOli8,cOli7))
+	*VVV(-p3, v7l6, p1+p3-k, v7l7, -p1+k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*DS(-p4-k, 0)
+	*DS(-p1234+p4+k, 0)
+	*V(p1,cOli3)
+	*DS(k, 0)
+	*DV(v7l5, v8l5, p1-k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v6l7, v7l7, p1+p3-k, 0)
+	*V(p2,cOli8)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d122 :
+
+*--#[ d123 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, q -> qbar, -p3-k
+*	2: 6 -> 9, qbar -> q, -p1234+p3+k
+*	3: 1 -> 8, -p1
+*	4: 5 -> 8, qbar -> q, k
+*	5: 7 -> 8, g -> g, p1-k
+*	6: 2 -> 7, -p4
+*	7: 6 -> 7, g -> g, p1+p4-k
+*	8: 3 -> 6, -p2
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d123 =
+
+	+6*(-1)
+	*EikV(-k, v5l9)
+	*(cOlT(cOli4,cOli1,cOli9))
+	*EikV(p1234-p3-k, v6l7)
+	*(cOlT(cOli2,cOli8,cOli7))
+	*VVV(-p4, v7l6, p1+p4-k, v7l7, -p1+k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(-p1, v8l5)
+	*(cOlT(cOli3,cOli4,cOli5))
+	*(M(cOli1,cOli2))
+	*1
+	*DS(-p3-k, 0)
+	*DS(-p1234+p3+k, 0)
+	*V(p1,cOli3)
+	*DS(k, 0)
+	*DV(v7l5, v8l5, p1-k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p1+p4-k, 0)
+	*V(p2,cOli8)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d123 :
+
+*--#[ d124 :
+
+*	internal fields: quark quark g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, qbar -> q, -p2-k
+*	2: 6 -> 9, q -> qbar, -p1234+p2+k
+*	3: 1 -> 8, -p1
+*	4: 5 -> 8, g -> g, k
+*	5: 7 -> 8, qbar -> q, p1-k
+*	6: 2 -> 7, -p3
+*	7: 6 -> 7, qbar -> q, p1+p3-k
+*	8: 3 -> 6, -p4
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d124 =
+
+	+1*(-1)
+	*EikV(p2+k, v5l4)
+	*(cOlT(cOli1,cOli9,cOli4))
+	*EikV(-p1-p3+k, v6l8)
+	*(cOlT(cOli7,cOli2,cOli8))
+	*EikV(-p1+k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*DS(-p2-k, 0)
+	*DS(-p1234+p2+k, 0)
+	*V(p1,cOli3)
+	*DV(v5l4, v8l4, k, 0)
+	*DS(p1-k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DS(p1+p3-k, 0)
+	*EpsStar(v6l8,p4,cOli8)
+	*V(p2,cOli9)
+
+;
+
+*--#] d124 :
+
+*--#[ d125 :
+
+*	internal fields: quark quark g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, qbar -> q, -p2-k
+*	2: 6 -> 9, q -> qbar, -p1234+p2+k
+*	3: 1 -> 8, -p1
+*	4: 5 -> 8, g -> g, k
+*	5: 7 -> 8, qbar -> q, p1-k
+*	6: 2 -> 7, -p4
+*	7: 6 -> 7, qbar -> q, p1+p4-k
+*	8: 3 -> 6, -p3
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d125 =
+
+	+1*(-1)
+	*EikV(p2+k, v5l4)
+	*(cOlT(cOli1,cOli9,cOli4))
+	*EikV(-p1-p4+k, v6l8)
+	*(cOlT(cOli7,cOli2,cOli8))
+	*EikV(-p1+k, v7l6)
+	*(cOlT(cOli5,cOli7,cOli6))
+	*EikV(-p1, v8l4)
+	*(cOlT(cOli3,cOli5,cOli4))
+	*(M(cOli2,cOli1))
+	*1
+	*DS(-p2-k, 0)
+	*DS(-p1234+p2+k, 0)
+	*V(p1,cOli3)
+	*DV(v5l4, v8l4, k, 0)
+	*DS(p1-k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DS(p1+p4-k, 0)
+	*EpsStar(v6l8,p3,cOli8)
+	*V(p2,cOli9)
+
+;
+
+*--#] d125 :
+
+*--#[ d126 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, qbar -> q, -p4-k
+*	2: 6 -> 9, q -> qbar, -p1234+p4+k
+*	3: 1 -> 8, -p2
+*	4: 5 -> 8, q -> qbar, k
+*	5: 7 -> 8, g -> g, p2-k
+*	6: 2 -> 7, -p3
+*	7: 6 -> 7, g -> g, p2+p3-k
+*	8: 3 -> 6, -p1
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d126 =
+
+	+6*(-1)
+	*EikV(p4+k, v5l9)
+	*(cOlT(cOli1,cOli4,cOli9))
+	*EikV(-p1, v6l7)
+	*(cOlT(cOli8,cOli2,cOli7))
+	*VVV(-p3, v7l6, p2+p3-k, v7l7, -p2+k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(k, v8l5)
+	*(cOlT(cOli4,cOli3,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*DS(-p4-k, 0)
+	*DS(-p1234+p4+k, 0)
+	*V(p2,cOli3)
+	*DS(k, 0)
+	*DV(v7l5, v8l5, p2-k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v6l7, v7l7, p2+p3-k, 0)
+	*V(p1,cOli8)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d126 :
+
+*--#[ d127 :
+
+*	internal fields: quark quark quark g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, qbar -> q, -p3-k
+*	2: 6 -> 9, q -> qbar, -p1234+p3+k
+*	3: 1 -> 8, -p2
+*	4: 5 -> 8, q -> qbar, k
+*	5: 7 -> 8, g -> g, p2-k
+*	6: 2 -> 7, -p4
+*	7: 6 -> 7, g -> g, p2+p4-k
+*	8: 3 -> 6, -p1
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d127 =
+
+	+6*(-1)
+	*EikV(p3+k, v5l9)
+	*(cOlT(cOli1,cOli4,cOli9))
+	*EikV(-p1, v6l7)
+	*(cOlT(cOli8,cOli2,cOli7))
+	*VVV(-p4, v7l6, p2+p4-k, v7l7, -p2+k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*EikV(k, v8l5)
+	*(cOlT(cOli4,cOli3,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*DS(-p3-k, 0)
+	*DS(-p1234+p3+k, 0)
+	*V(p2,cOli3)
+	*DS(k, 0)
+	*DV(v7l5, v8l5, p2-k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p2+p4-k, 0)
+	*V(p1,cOli8)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d127 :
+
+*--#[ d128 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, qbar -> q, -p4-k
+*	2: 6 -> 9, q -> qbar, -p1234+p4+k
+*	3: 1 -> 8, -p3
+*	4: 5 -> 8, q -> qbar, k
+*	5: 7 -> 8, qbar -> q, p3-k
+*	6: 2 -> 7, -p2
+*	7: 6 -> 7, g -> g, p3+p2-k
+*	8: 3 -> 6, -p1
+*	9: 4 -> 5, -p4
+
+#define nl "0"
+
+g d128 =
+
+	+1*(-1)
+	*EikV(p4+k, v5l9)
+	*(cOlT(cOli1,cOli4,cOli9))
+	*EikV(-p1, v6l7)
+	*(cOlT(cOli8,cOli2,cOli7))
+	*EikV(-p3+k, v7l7)
+	*(cOlT(cOli5,cOli6,cOli7))
+	*EikV(k, v8l3)
+	*(cOlT(cOli4,cOli5,cOli3))
+	*(M(cOli2,cOli1))
+	*1
+	*DS(-p4-k, 0)
+	*DS(-p1234+p4+k, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DS(k, 0)
+	*DS(p3-k, 0)
+	*V(p2,cOli6)
+	*DV(v6l7, v7l7, p3+p2-k, 0)
+	*V(p1,cOli8)
+	*EpsStar(v5l9,p4,cOli9)
+
+;
+
+*--#] d128 :
+
+*--#[ d129 :
+
+*	internal fields: quark quark quark quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, qbar -> q, -p3-k
+*	2: 6 -> 9, q -> qbar, -p1234+p3+k
+*	3: 1 -> 8, -p4
+*	4: 5 -> 8, q -> qbar, k
+*	5: 7 -> 8, qbar -> q, p4-k
+*	6: 2 -> 7, -p2
+*	7: 6 -> 7, g -> g, p4+p2-k
+*	8: 3 -> 6, -p1
+*	9: 4 -> 5, -p3
+
+#define nl "0"
+
+g d129 =
+
+	+1*(-1)
+	*EikV(p3+k, v5l9)
+	*(cOlT(cOli1,cOli4,cOli9))
+	*EikV(-p1, v6l7)
+	*(cOlT(cOli8,cOli2,cOli7))
+	*EikV(-p4+k, v7l7)
+	*(cOlT(cOli5,cOli6,cOli7))
+	*EikV(k, v8l3)
+	*(cOlT(cOli4,cOli5,cOli3))
+	*(M(cOli2,cOli1))
+	*1
+	*DS(-p3-k, 0)
+	*DS(-p1234+p3+k, 0)
+	*EpsStar(v8l3,p4,cOli3)
+	*DS(k, 0)
+	*DS(p4-k, 0)
+	*V(p2,cOli6)
+	*DV(v6l7, v7l7, p4+p2-k, 0)
+	*V(p1,cOli8)
+	*EpsStar(v5l9,p3,cOli9)
+
+;
+
+*--#] d129 :
+
+*--#[ d130 :
+
+*	internal fields: quark quark g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, qbar -> q, -p2-k
+*	2: 6 -> 9, q -> qbar, -p1234+p2+k
+*	3: 1 -> 8, -p3
+*	4: 5 -> 8, g -> g, k
+*	5: 7 -> 8, g -> g, p3-k
+*	6: 2 -> 7, -p4
+*	7: 6 -> 7, g -> g, p3+p4-k
+*	8: 3 -> 6, -p1
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d130 =
+
+	+36*(-1)
+	*EikV(p2+k, v5l4)
+	*(cOlT(cOli1,cOli9,cOli4))
+	*EikV(-p1, v6l7)
+	*(cOlT(cOli8,cOli2,cOli7))
+	*VVV(-p4, v7l6, p3+p4-k, v7l7, -p3+k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*VVV(-p3, v8l3, k, v8l4, p3-k, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*DS(-p2-k, 0)
+	*DS(-p1234+p2+k, 0)
+	*EpsStar(v8l3,p3,cOli3)
+	*DV(v5l4, v8l4, k, 0)
+	*DV(v7l5, v8l5, p3-k, 0)
+	*EpsStar(v7l6,p4,cOli6)
+	*DV(v6l7, v7l7, p3+p4-k, 0)
+	*V(p1,cOli8)
+	*V(p2,cOli9)
+
+;
+
+*--#] d130 :
+
+*--#[ d131 :
+
+*	internal fields: quark quark g g g 
+*
+*	detailed description:
+*
+*	0: 0 -> 9, p1234
+*	1: 5 -> 9, qbar -> q, -p2-k
+*	2: 6 -> 9, q -> qbar, -p1234+p2+k
+*	3: 1 -> 8, -p4
+*	4: 5 -> 8, g -> g, k
+*	5: 7 -> 8, g -> g, p4-k
+*	6: 2 -> 7, -p3
+*	7: 6 -> 7, g -> g, p4+p3-k
+*	8: 3 -> 6, -p1
+*	9: 4 -> 5, -p2
+
+#define nl "0"
+
+g d131 =
+
+	+36*(-1)
+	*EikV(p2+k, v5l4)
+	*(cOlT(cOli1,cOli9,cOli4))
+	*EikV(-p1, v6l7)
+	*(cOlT(cOli8,cOli2,cOli7))
+	*VVV(-p3, v7l6, p4+p3-k, v7l7, -p4+k, v7l5)
+	*(-1/6*i_*cOlf(cOli6,cOli7,cOli5))
+	*VVV(-p4, v8l3, k, v8l4, p4-k, v8l5)
+	*(-1/6*i_*cOlf(cOli3,cOli4,cOli5))
+	*(M(cOli2,cOli1))
+	*1
+	*DS(-p2-k, 0)
+	*DS(-p1234+p2+k, 0)
+	*EpsStar(v8l3,p4,cOli3)
+	*DV(v5l4, v8l4, k, 0)
+	*DV(v7l5, v8l5, p4-k, 0)
+	*EpsStar(v7l6,p3,cOli6)
+	*DV(v6l7, v7l7, p4+p3-k, 0)
+	*V(p1,cOli8)
+	*V(p2,cOli9)
+
+;
+
+*--#] d131 :
+
+*--#[ d132 :
+
+*	internal fields: g g quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p3
+*	1: 1 -> 8, -p4
+*	2: 5 -> 8, g -> g, p3+p4-k
+*	3: 5 -> 8, g -> g, k
+*	4: 2 -> 7, p1234
+*	5: 3 -> 7, -p1
+*	6: 6 -> 7, qbar -> q, p1-p1234
+*	7: 4 -> 6, -p2
+*	8: 5 -> 6, g -> g, -p3-p4
+
+#define nl "0"
+
+g d132 =
+
+	+72*(+1)
+	*VVV(-p3-p4+k, v5l2, -k, v5l3, p3+p4, v5l8)
+	*(-1/6*i_*cOlf(cOli2,cOli3,cOli8))
+	*EikV(-p1+p1234, v6l8)
+	*(cOlT(cOli6,cOli7,cOli8))
+	*(M(cOli5,cOli6))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p3,cOli0)
+	*EpsStar(v8l1,p4,cOli1)
+	*DV(v5l2, v8l2, p3+p4-k, 0)
+	*DV(v5l3, v8l3, k, 0)
+	*1
+	*V(p1,cOli5)
+	*DS(p1-p1234, 0)
+	*V(p2,cOli7)
+	*DV(v5l8, v6l8, -p3-p4, 0)
+
+;
+
+*--#] d132 :
+
+*--#[ d133 :
+
+*	internal fields: g g quark g 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p3
+*	1: 1 -> 8, -p4
+*	2: 5 -> 8, g -> g, p3+p4-k
+*	3: 5 -> 8, g -> g, k
+*	4: 2 -> 7, p1234
+*	5: 3 -> 7, -p2
+*	6: 6 -> 7, q -> qbar, p2-p1234
+*	7: 4 -> 6, -p1
+*	8: 5 -> 6, g -> g, -p3-p4
+
+#define nl "0"
+
+g d133 =
+
+	+72*(+1)
+	*VVV(-p3-p4+k, v5l2, -k, v5l3, p3+p4, v5l8)
+	*(-1/6*i_*cOlf(cOli2,cOli3,cOli8))
+	*EikV(-p1, v6l8)
+	*(cOlT(cOli7,cOli6,cOli8))
+	*(M(cOli6,cOli5))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p3,cOli0)
+	*EpsStar(v8l1,p4,cOli1)
+	*DV(v5l2, v8l2, p3+p4-k, 0)
+	*DV(v5l3, v8l3, k, 0)
+	*1
+	*V(p2,cOli5)
+	*DS(p2-p1234, 0)
+	*V(p1,cOli7)
+	*DV(v5l8, v6l8, -p3-p4, 0)
+
+;
+
+*--#] d133 :
+
+*--#[ d134 :
+
+*	internal fields: g g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p3
+*	1: 5 -> 8, g -> g, -p4-k
+*	2: 5 -> 8, g -> g, k
+*	3: 6 -> 8, g -> g, p3+p4
+*	4: 1 -> 7, p1234
+*	5: 2 -> 7, -p1
+*	6: 6 -> 7, qbar -> q, p1-p1234
+*	7: 3 -> 6, -p2
+*	8: 4 -> 5, -p4
+
+#define nl "0"
+
+g d134 =
+
+	+72*(+1)
+	*VVV(-p4, v5l8, p4+k, v5l1, -k, v5l2)
+	*(-1/6*i_*cOlf(cOli8,cOli1,cOli2))
+	*EikV(-p1+p1234, v6l3)
+	*(cOlT(cOli6,cOli7,cOli3))
+	*(M(cOli5,cOli6))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p3,cOli0)
+	*DV(v5l1, v8l1, -p4-k, 0)
+	*DV(v5l2, v8l2, k, 0)
+	*DV(v6l3, v8l3, p3+p4, 0)
+	*1
+	*V(p1,cOli5)
+	*DS(p1-p1234, 0)
+	*V(p2,cOli7)
+	*EpsStar(v5l8,p4,cOli8)
+
+;
+
+*--#] d134 :
+
+*--#[ d135 :
+
+*	internal fields: g g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p4
+*	1: 5 -> 8, g -> g, -p3-k
+*	2: 5 -> 8, g -> g, k
+*	3: 6 -> 8, g -> g, p4+p3
+*	4: 1 -> 7, p1234
+*	5: 2 -> 7, -p1
+*	6: 6 -> 7, qbar -> q, p1-p1234
+*	7: 3 -> 6, -p2
+*	8: 4 -> 5, -p3
+
+#define nl "0"
+
+g d135 =
+
+	+72*(+1)
+	*VVV(-p3, v5l8, p3+k, v5l1, -k, v5l2)
+	*(-1/6*i_*cOlf(cOli8,cOli1,cOli2))
+	*EikV(-p1+p1234, v6l3)
+	*(cOlT(cOli6,cOli7,cOli3))
+	*(M(cOli5,cOli6))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p4,cOli0)
+	*DV(v5l1, v8l1, -p3-k, 0)
+	*DV(v5l2, v8l2, k, 0)
+	*DV(v6l3, v8l3, p4+p3, 0)
+	*1
+	*V(p1,cOli5)
+	*DS(p1-p1234, 0)
+	*V(p2,cOli7)
+	*EpsStar(v5l8,p3,cOli8)
+
+;
+
+*--#] d135 :
+
+*--#[ d136 :
+
+*	internal fields: g g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p3
+*	1: 5 -> 8, g -> g, -p4-k
+*	2: 5 -> 8, g -> g, k
+*	3: 6 -> 8, g -> g, p3+p4
+*	4: 1 -> 7, p1234
+*	5: 2 -> 7, -p2
+*	6: 6 -> 7, q -> qbar, p2-p1234
+*	7: 3 -> 6, -p1
+*	8: 4 -> 5, -p4
+
+#define nl "0"
+
+g d136 =
+
+	+72*(+1)
+	*VVV(-p4, v5l8, p4+k, v5l1, -k, v5l2)
+	*(-1/6*i_*cOlf(cOli8,cOli1,cOli2))
+	*EikV(-p1, v6l3)
+	*(cOlT(cOli7,cOli6,cOli3))
+	*(M(cOli6,cOli5))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p3,cOli0)
+	*DV(v5l1, v8l1, -p4-k, 0)
+	*DV(v5l2, v8l2, k, 0)
+	*DV(v6l3, v8l3, p3+p4, 0)
+	*1
+	*V(p2,cOli5)
+	*DS(p2-p1234, 0)
+	*V(p1,cOli7)
+	*EpsStar(v5l8,p4,cOli8)
+
+;
+
+*--#] d136 :
+
+*--#[ d137 :
+
+*	internal fields: g g g quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p4
+*	1: 5 -> 8, g -> g, -p3-k
+*	2: 5 -> 8, g -> g, k
+*	3: 6 -> 8, g -> g, p4+p3
+*	4: 1 -> 7, p1234
+*	5: 2 -> 7, -p2
+*	6: 6 -> 7, q -> qbar, p2-p1234
+*	7: 3 -> 6, -p1
+*	8: 4 -> 5, -p3
+
+#define nl "0"
+
+g d137 =
+
+	+72*(+1)
+	*VVV(-p3, v5l8, p3+k, v5l1, -k, v5l2)
+	*(-1/6*i_*cOlf(cOli8,cOli1,cOli2))
+	*EikV(-p1, v6l3)
+	*(cOlT(cOli7,cOli6,cOli3))
+	*(M(cOli6,cOli5))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p4,cOli0)
+	*DV(v5l1, v8l1, -p3-k, 0)
+	*DV(v5l2, v8l2, k, 0)
+	*DV(v6l3, v8l3, p4+p3, 0)
+	*1
+	*V(p2,cOli5)
+	*DS(p2-p1234, 0)
+	*V(p1,cOli7)
+	*EpsStar(v5l8,p3,cOli8)
+
+;
+
+*--#] d137 :
+
+*--#[ d138 :
+
+*	internal fields: g g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p3
+*	1: 1 -> 8, -p4
+*	2: 5 -> 8, g -> g, -p2-k
+*	3: 6 -> 8, g -> g, p1234-p1+k
+*	4: 2 -> 7, p1234
+*	5: 5 -> 7, qbar -> q, k
+*	6: 6 -> 7, q -> qbar, -p1234-k
+*	7: 3 -> 6, -p1
+*	8: 4 -> 5, -p2
+
+#define nl "0"
+
+g d138 =
+
+	+24*(+1)
+	*EikV(-k, v5l2)
+	*(cOlT(cOli5,cOli8,cOli2))
+	*EikV(-p1, v6l3)
+	*(cOlT(cOli7,cOli6,cOli3))
+	*(M(cOli6,cOli5))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p3,cOli0)
+	*EpsStar(v8l1,p4,cOli1)
+	*DV(v5l2, v8l2, -p2-k, 0)
+	*DV(v6l3, v8l3, p1234-p1+k, 0)
+	*1
+	*DS(k, 0)
+	*DS(-p1234-k, 0)
+	*V(p1,cOli7)
+	*V(p2,cOli8)
+
+;
+
+*--#] d138 :
+
+*--#[ d139 :
+
+*	internal fields: g g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p3
+*	1: 1 -> 8, -p4
+*	2: 5 -> 8, g -> g, -p1+p1234-k
+*	3: 6 -> 8, g -> g, -p2+k
+*	4: 2 -> 7, p1234
+*	5: 3 -> 7, -p1
+*	6: 5 -> 7, qbar -> q, p1-p1234
+*	7: 4 -> 6, -p2
+*	8: 5 -> 6, q -> qbar, k
+
+#define nl "0"
+
+g d139 =
+
+	+24*(+1)
+	*EikV(-p1+p1234, v5l2)
+	*(cOlT(cOli6,cOli8,cOli2))
+	*EikV(k, v6l3)
+	*(cOlT(cOli8,cOli7,cOli3))
+	*(M(cOli5,cOli6))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p3,cOli0)
+	*EpsStar(v8l1,p4,cOli1)
+	*DV(v5l2, v8l2, -p1+p1234-k, 0)
+	*DV(v6l3, v8l3, -p2+k, 0)
+	*1
+	*V(p1,cOli5)
+	*DS(p1-p1234, 0)
+	*V(p2,cOli7)
+	*DS(k, 0)
+
+;
+
+*--#] d139 :
+
+*--#[ d140 :
+
+*	internal fields: g g quark quark 
+*
+*	detailed description:
+*
+*	0: 0 -> 8, -p3
+*	1: 1 -> 8, -p4
+*	2: 5 -> 8, g -> g, -p2+p1234-k
+*	3: 6 -> 8, g -> g, -p1+k
+*	4: 2 -> 7, p1234
+*	5: 3 -> 7, -p2
+*	6: 5 -> 7, q -> qbar, p2-p1234
+*	7: 4 -> 6, -p1
+*	8: 5 -> 6, qbar -> q, k
+
+#define nl "0"
+
+g d140 =
+
+	+24*(+1)
+	*EikV(-k, v5l2)
+	*(cOlT(cOli8,cOli6,cOli2))
+	*EikV(-p1, v6l3)
+	*(cOlT(cOli7,cOli8,cOli3))
+	*(M(cOli6,cOli5))
+	*(+d_(v8l0, v8l1)*d_(v8l2, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli2)*cOlf(cOlj8,cOli1,cOli3)
+	   +cOlf(cOlj8,cOli1,cOli2)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l2)*d_(v8l1, v8l3)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli2,cOli3)
+	   +cOlf(cOlj8,cOli2,cOli1)*cOlf(cOlj8,cOli0,cOli3)))
+	  +d_(v8l0, v8l3)*d_(v8l1, v8l2)
+	  *(-Quad/24*(cOlf(cOlj8,cOli0,cOli1)*cOlf(cOlj8,cOli3,cOli2)
+	   +cOlf(cOlj8,cOli3,cOli1)*cOlf(cOlj8,cOli0,cOli2))))
+	*EpsStar(v8l0,p3,cOli0)
+	*EpsStar(v8l1,p4,cOli1)
+	*DV(v5l2, v8l2, -p2+p1234-k, 0)
+	*DV(v6l3, v8l3, -p1+k, 0)
+	*1
+	*V(p2,cOli5)
+	*DS(p2-p1234, 0)
+	*V(p1,cOli7)
+	*DS(k, 0)
+
+;
+
+*--#] d140 :
+
+#define ndiags "140"

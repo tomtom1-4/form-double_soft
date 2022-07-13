@@ -1,0 +1,5 @@
+jobs:
+- kira2math:
+    target:
+    - ["Eikonal", 31, 0, 0]
+    reconstruct_mass: true

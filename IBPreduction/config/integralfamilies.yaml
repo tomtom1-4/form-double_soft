@@ -1,0 +1,10 @@
+integralfamilies:
+- name: "Eikonal"
+  loop_momenta: ["k"]
+  top_level_sectors: [31]
+  propagators:
+  - ["k",0]
+  - ["k+p3",0]
+  - ["k+p3+p4",0]
+  - {bilinear: [["p1","k"],0]}
+  - {bilinear: [["p2","k+p3+p4"],0]}
